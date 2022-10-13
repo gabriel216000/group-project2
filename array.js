@@ -1,4 +1,4 @@
-let bars =
+let places =
 [
     {
       id: 1,
@@ -223,3 +223,60 @@ let bars =
 
 
 ]
+
+
+let offer =[
+
+  {
+      id: 1,
+      barId: 7,
+      day: ["thursday"],
+      time: "allday",
+      offer: {coctails: "1600,- kr"}
+  },
+
+  {
+      id: 2,
+      barId: 15,
+      day: ["wednesday"],
+      time: "15:00-19:00",
+      offer: {coctails: "Mojito 1000,- kr"}
+  },
+
+  {
+      id: 3,
+      barId: 15,
+      day: ["thursday"],
+      time: "15:00-19:00",
+      offer: {coctails: "Gin'n Tonic 1490,- kr"}
+  },
+
+  {
+      id: 4,
+      barId: 0,
+      type: "bar",
+      bar_name: "Bastard Brew and Food",
+      address: "Vegamótastígur 4, 101 Reykajvík",
+      day: ["monday"],
+      time: "12:00-22:00",
+      offer: {beer: "500kr off", beer: "500kr off"}
+  },
+
+  {
+      id: 5,
+      barId: 10,
+      day: ["sunday", "monday", "tuesday", "wednesday", "thursday"],
+      time: "22:00-24:00",
+      offer: "Late night happy hour"
+  },
+
+  {
+      id: 6,
+      barId: 2,
+      day: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+      time: "16:00-19:00",
+      offer: {coctails: "2f1 Moscow Mule, 2f1 Aperol Spritz"}
+  },
+
+] 
+

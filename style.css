@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    /*
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/bar.png");
+    */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Splash screen */
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, purple,  orange);
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+.logo {
+    position: absolute;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    color: black;
+
+
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* Splash screen end */
+
+
+
+.emphasis {
+    color: #b042ff;
+}
+
+
+.icon-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover
+{
+    opacity: 0.5;
+}
+
+
+
+#when {
+    color: white;
+    padding-bottom: 10px;
+    margin-left: 265px;
+}
+
+#click {
+    margin-top: -20px;
+    text-align: center;
+    
+}
+
+#bars-restaurants {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: lightgrey;
+    
+    
+}
+
+#happy{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#main-logo {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 1450px;
+    width: 60px;
+    background-image: linear-gradient(to top, purple,  orange);
+    background-position: left right;
+    position: fixed;
+    
+     
+    
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: inherit;
+    background: transparent;
+    color: inherit;
+}
+
+#menu-button {
+    color: black;
+    font-size: large;
+    position: fixed;
+    right: 50px;
+    top: 32px;
+
+}
+
+#menu {
+    position: fixed;
+    top: 30vh;
+    width: 100vw;
+    flex-direction: column;
+    display: none;
+
+}
+
+.menu-item {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+#about, #contact, #bars, #restaurants, #sign-up {
+    display: none;
+}
+
+
+
+
+
+#clock {
+    color: #b042ff;
+    font-weight: bold;
+}
+
+#cocktailbar {
+    object-position: 25% 25%;
+    
+}
+
+#petersen {
+    object-position: 0% 90%;
+    
+    
+}
+
+#sushi{
+    object-position: 25% 25%;
+    
+}
+
+#place1, #place2 {
+    margin: 40px 0 20px 60px;
+}
+
+.section {
+    padding-left: 40px;
+    padding-top: 100px;
+    
+}
+
+.images {
+    width: 320px; 
+    height: 112px; 
+    object-fit: cover;
+    margin-bottom: -4px;
+    border-radius: 8px 8px 0px 0px; 
+}
+
+#info {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 8px 8px; 
+}
+
+#info h3, p{
+    margin-bottom: 5px;
+}
+
+
+
+#left, #middle, #right, #last {
+    padding-left: 20px;
+    width: 320px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven {
+    padding-bottom: 20px;
+}
+
+
+
+
+#bars-container {
+    
+    color: black; 
+    display: flex;
+    flex-direction: row; 
+    flex-flow: row wrap;  
+
+}
+
+
+
+
+
+#restaurants-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 28px;
+}
+
+#author-image {
+    height: 8rem;
+    border-radius: 50%;
+    float: left;
+
+}
+
+#about p {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 1rem;
+    padding-top: 0px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.04);
+    margin-left: 0.5rem;
+    color: #e1affd;
+
+}
+
+#contact p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #b042ff;
+}

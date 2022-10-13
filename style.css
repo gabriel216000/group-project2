@@ -89,20 +89,13 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     margin-left: 265px;
 }
 
-#click {
+#now {
     margin-top: -20px;
     text-align: center;
-    
+    font-size: 20px;
+    color: rgb(180, 155, 155);
 }
 
-#bars-restaurants {
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-    color: lightgrey;
-    
-    
-}
 
 #happy{
     padding-top: 100px;
@@ -220,7 +213,7 @@ button {
     width: 320px;
 }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven {
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve {
     padding-bottom: 20px;
 }
 
@@ -241,9 +234,10 @@ button {
 
 
 #restaurants-container {
+    color: black; 
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: row; 
+    flex-flow: row wrap; 
 }
 
 

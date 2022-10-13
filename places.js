@@ -55,13 +55,13 @@ barlist.innerHTML+= `
     
 });
 
-let resturantlist = document.getElementById("resturant-container");
+let restaurantlist = document.getElementById("restaurants-container");
 
-places.filter (place=>place.type === "resturants" )
+places.filter (place=>place.type === "restaurants" )
 
 .forEach(element => {
  
-resturantlist.innerHTML+= `
+restaurantlist.innerHTML+= `
   <div id="one">
                 <img class="images" id="cocktailbar" src="images/bars/cocktailbar.JPG" alt="cocktailbar">
                 <div id="info">

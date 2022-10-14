@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    
 }
 
 body {
@@ -17,9 +16,7 @@ body {
 }
 
 
-
 /* Splash screen */
-
 .intro {
     position: fixed;
     z-index: 1;
@@ -45,8 +42,6 @@ body {
     bottom: -20px;
     opacity: 0;
     color: black;
-
-
 }
 
 .logo.active {
@@ -60,15 +55,12 @@ body {
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-
 /* Splash screen end */
-
 
 
 .emphasis {
     color: #b042ff;
 }
-
 
 .icon-link {
     text-decoration: none;
@@ -76,12 +68,9 @@ body {
     margin-right: 1rem;
 }
 
-a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover
-{
+a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
     opacity: 0.5;
 }
-
-
 
 #when {
     color: white;
@@ -96,13 +85,11 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     color: rgb(180, 155, 155);
 }
 
-
 #happy{
     padding-top: 100px;
     text-align: center;
     font-size: 50px;
 }
-
 
 #main-logo {
     padding-top: 30px;
@@ -112,10 +99,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
     background-position: left right;
-    position: fixed;
-    
-     
-    
+    position: fixed;  
 }
 
 button {
@@ -132,7 +116,6 @@ button {
     position: fixed;
     right: 50px;
     top: 32px;
-
 }
 
 #menu {
@@ -141,7 +124,6 @@ button {
     width: 100vw;
     flex-direction: column;
     display: none;
-
 }
 
 .menu-item {
@@ -153,29 +135,21 @@ button {
     display: none;
 }
 
-
-
-
-
 #clock {
     color: #b042ff;
     font-weight: bold;
 }
 
 #cocktailbar {
-    object-position: 25% 25%;
-    
+    object-position: 25% 25%; 
 }
 
 #petersen {
     object-position: 0% 90%;
-    
-    
 }
 
 #sushi{
     object-position: 25% 25%;
-    
 }
 
 #place1, #place2 {
@@ -185,7 +159,6 @@ button {
 .section {
     padding-left: 40px;
     padding-top: 100px;
-    
 }
 
 .images {
@@ -206,8 +179,6 @@ button {
     margin-bottom: 5px;
 }
 
-
-
 #left, #middle, #right, #last {
     padding-left: 20px;
     width: 320px;
@@ -217,29 +188,20 @@ button {
     padding-bottom: 20px;
 }
 
-
 #home {
     
     color: black; 
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-
 }
 
-
-#bars-container {
-    
+#bars-container {   
     color: black; 
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-
 }
-
-
-
-
 
 #restaurants-container {
     color: black; 
@@ -248,20 +210,16 @@ button {
     flex-flow: row wrap; 
 }
 
-
-
 h2 {
     font-size: 2rem;
     padding-bottom: 28px;
     color: white;
-  
 }
 
 #author-image {
     height: 8rem;
     border-radius: 50%;
     float: left;
-
 }
 
 #about p {
@@ -274,7 +232,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.04);
     margin-left: 0.5rem;
     color: #e1affd;
-
 }
 
 #contact p {

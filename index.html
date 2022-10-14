@@ -5,7 +5,7 @@
     <link rel="array" href="array.js">
     <meta charset="UTF-8">
 
-    <meta name="author" content="Happy">
+    <meta name="author" content="Tipsy">
 
     <!-- Font awesome ( peace merkið ) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy</title>
+    <title>Tipsy</title>
 
 
     
@@ -44,23 +44,11 @@
     
 
 
-     <nav>
-    <button  id="menu-button" class="fa fa-bars fa-4x"onclick="toggleMenu()" ></button>
-    <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
-
-    <div id="menu">
-        <button class="menu-item" onclick="showHomePage()">Home</button>
-        <button class="menu-item" onclick="showAboutPage()">About</button>
-        <button class="menu-item" onclick="showSignupPage()">Sign-up</button>
-        <button class="menu-item" onclick="showContactPage()">Contact</button>
-        <button class="menu-item" onclick="showBarsPage()">Bars</button>
-        <button class="menu-item" onclick="showRestaurantsPage()">Restaurants</button>
-    </div>
-    </nav>
+   
 
 
     <main id="main-section">
-        
+        <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
         <!-- Homepage shows whats happening right now -->
         <div id="home">
            <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
@@ -139,8 +127,8 @@
             <button id="when">when</button>
             <div id="restaurants-container">
               
-            
-    
+            </div>
+            </div>
         </div>
 
         <!--Sign up page-->
@@ -164,7 +152,16 @@
     
     
     <!-- menubar and hamburger -->
-
+    
+    <button  id="menu-button" class="fa fa-bars fa-4x"onclick="toggleMenu()" ></button>
+    <div id="menu">
+        <button class="menu-item" onclick="showHomePage()">Home</button>
+        <button class="menu-item" onclick="showAboutPage()">About</button>
+        <button class="menu-item" onclick="showSignupPage()">Sign-up</button>
+        <button class="menu-item" onclick="showContactPage()">Contact</button>
+        <button class="menu-item" onclick="showBarsPage()">Bars</button>
+        <button class="menu-item" onclick="showRestaurantsPage()">Restaurants</button>
+    </div>
 
 
     <script src="main.js"></script>

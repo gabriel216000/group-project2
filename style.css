@@ -108,7 +108,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    padding-right: 1450px;
+    padding-right: 2500px;
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
     background-position: left right;
@@ -253,6 +253,8 @@ button {
 h2 {
     font-size: 2rem;
     padding-bottom: 28px;
+    color: white;
+  
 }
 
 #author-image {

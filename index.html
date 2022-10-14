@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
+    <link rel="stylesheet" href="stylesi.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="array" href="array.js">
     <meta charset="UTF-8">
@@ -152,6 +154,69 @@
             </div>
             <div class="section">
             <h2>Sign-up</h2>
+
+            <nav>
+            </label>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Sign In</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+           </nav>
+        
+            <h1>Sign In</h1>
+            <h4>Sign in to get the best deals!</h4>
+            
+            <div class="signin-box">
+                <form id="form">
+                    <div class="signin-box">
+        
+                        <label for="username">Username</label>
+                        <i class="fas fa-user"></i>
+        
+                        <input 
+                            type="text" 
+                            name="username"
+                            id="username"
+                            placeholder=""
+                        />
+                        <i class="fas fa-exclamation-circle failure-icon"></i>
+                        <i class="far fa-check-circle success-icon"></i>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div>
+                        <label for="password">Password</label>
+                        <i class="fas fa-lock"></i>
+        
+                        <input 
+                            type="password" 
+                            name="password"
+                            id="password"
+                            placeholder=""
+                        />
+                        <i class="fas fa-exclamation-circle failure-icon"></i>
+                        <i class="far fa-check-circle success-icon"></i>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div id="testing">
+                        <p>Forgot password?</p>
+                    </div>
+                    <!--<input type="button" value="Sign In">-->
+                    <button id="btn" type="submit">Sign In</button>
+                    <div id="testingTwo">
+                    <p>Not a member? <div id="signUp">Sign up</div></p>
+                    </div>
+                </form>
+            </div>
+
             <div id="sign-up-container">
                 
             </div>
@@ -172,6 +237,8 @@
     <script src="array.js"></script>
     <script src= "arrayfunctions.js"></script>
     <script src="places.js"></script>
+    <script src="mainsi.js"></script>
+
     
 </body>
 </html>

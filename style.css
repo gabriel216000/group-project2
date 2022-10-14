@@ -68,10 +68,6 @@ body {
     margin-right: 1rem;
 }
 
-a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
-    opacity: 0.5;
-}
-
 #when {
     color: white;
     padding-bottom: 10px;
@@ -102,6 +98,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     position: fixed;  
 }
 
+/*hamburger*/
 button {
     cursor: pointer;
     border: none;
@@ -110,6 +107,7 @@ button {
     color: inherit;
 }
 
+/*hamburger*/
 #menu-button {
     color: black;
     font-size: large;
@@ -118,6 +116,7 @@ button {
     top: 32px;
 }
 
+/*hamburger*/
 #menu {
     position: fixed;
     top: 30vh;
@@ -126,13 +125,20 @@ button {
     display: none;
 }
 
+/*hamburger*/
 .menu-item {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
 
-#about, #contact, #bars, #restaurants, #sign-up {
+/*hamburger og annað*/
+#special-deals, #favourites, #contact-us, #sign-in, #bars, #restaurants{
     display: none;
+}
+
+/*hamburger og annað*/
+a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
+    opacity: 0.5;
 }
 
 #clock {
@@ -188,8 +194,7 @@ button {
     padding-bottom: 20px;
 }
 
-#home {
-    
+#favourites {
     color: black; 
     display: flex;
     flex-direction: row; 
@@ -234,7 +239,7 @@ h2 {
     color: #e1affd;
 }
 
-#contact p {
+#contact-us p {
     font-size: 2rem;
 }
 

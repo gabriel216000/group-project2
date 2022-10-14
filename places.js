@@ -1,4 +1,4 @@
-let nowlist = document.getElementById("now");
+let nowlist = document.getElementById("home");
 
 places.forEach(element => {
  
@@ -57,7 +57,7 @@ barlist.innerHTML+= `
 
 let restaurantlist = document.getElementById("restaurants-container");
 
-places.filter (place=>place.type === "restaurants" )
+places.filter (place=>place.type === "restaurants" ) //arrow function
 
 .forEach(element => {
  

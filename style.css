@@ -218,6 +218,14 @@ button {
 }
 
 
+#home {
+    
+    color: black; 
+    display: flex;
+    flex-direction: row; 
+    flex-flow: row wrap;  
+
+}
 
 
 #bars-container {

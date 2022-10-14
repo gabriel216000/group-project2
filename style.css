@@ -208,6 +208,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     flex-flow: row wrap;  
 }
 
+
 #restaurants-container {
     color: black; 
     display: flex;

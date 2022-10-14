@@ -9,7 +9,8 @@ const contact = document.getElementById("contact");
 const bars = document.getElementById("bars");
 const restaurants = document.getElementById("restaurants");
 const signup = document.getElementById("sign-up");
-/* Intro start */ 
+
+/* intro start */ 
 let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
 let logoSpan = document.querySelectorAll(".logo");
@@ -34,8 +35,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }, 2300)
     })
 })
-/* Intro end*/
+/* intro end*/
 
+
+/*hamburger menu, open-close*/ 
 let currentPage = home;
 
 let isMenuShowing=false;
@@ -68,10 +71,10 @@ function closeMenu() {
     mainSection.style.opacity = "1"
 }
 
+/*hamburger menu, hver síða fyrir sig*/ 
 function showHomePage() {
     changePage(home);
 }
-
 function showAboutPage() {
     changePage(about);
 }
@@ -88,6 +91,7 @@ function showSignupPage() {
     changePage(signup);
 }
 
+/*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 
 function changePage(newPage) {
     if ( currentPage !==newPage ) {
         currentPage.style.display = "none";
@@ -99,6 +103,8 @@ function changePage(newPage) {
     sessionStorage.setItem("pageID", currentPage.id)
 }
 
+
+/*refreshar síðu og þú ert ennþá inná sömu síðu en kastar þér ekki á homepage*/ 
 handleRefresh()
 
 function handleRefresh() {

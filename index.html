@@ -33,7 +33,10 @@
 
     
 </head>
-<body>
+<body>  
+   
+    
+    <!-- Intro screen -->
     <div class="intro">
         <h5 class="logo-header">
             <span class="logo"><img src="images/Tipsy_logo.png" alt="logo"></span>
@@ -41,11 +44,27 @@
     </div>
     
 
+
+     <nav>
+    <button  id="menu-button" class="fa fa-bars fa-4x"onclick="toggleMenu()" ></button>
+    <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+
+    <div id="menu">
+        <button class="menu-item" onclick="showHomePage()">Home</button>
+        <button class="menu-item" onclick="showAboutPage()">About</button>
+        <button class="menu-item" onclick="showSignupPage()">Sign-up</button>
+        <button class="menu-item" onclick="showContactPage()">Contact</button>
+        <button class="menu-item" onclick="showBarsPage()">Bars</button>
+        <button class="menu-item" onclick="showRestaurantsPage()">Restaurants</button>
+    </div>
+    </nav>
+
+
     <main id="main-section">
         
-        
+        <!-- Homepage shows whats happening right now -->
         <div id="home">
-            <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+           <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
             
             <h2 id="happy">HAPPY HOUR</h2>
             
@@ -55,11 +74,11 @@
             
             
         </div>
-    
+    <!--About page-->
         <div id="about">
             <div id="home">
             
-                <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+               <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
             </div>
             <div class="section">
             <h2>About the app</h2>
@@ -74,10 +93,12 @@
         </div>
         </div>
 
+        <!-- Contact page -->
+
         <div id="contact">
             <div id="home">
             
-                <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+               <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
             </div>
             <div class="section">
             <h2>Contact</h2>
@@ -88,10 +109,11 @@
         </div>
         </div>
 
+        <!-- Bar page -->
         <div id="bars">
             <div id="home">
                 
-                <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+              <!--  <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             
             </div>
             <div class="section">
@@ -106,10 +128,11 @@
         </div>
     
 
+        <!-- Restaurant page -->
         <div id="restaurants">
             <div id="home">
             
-                <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+               <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             </div>
             <div class="section">
                 
@@ -121,10 +144,11 @@
     
         </div>
 
+        <!--Sign up page-->
         <div id="sign-up">
             <div id="home">
             
-                <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+                <!--<img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             </div>
             <div class="section">
             <h2>Sign-up</h2>
@@ -140,19 +164,9 @@
     </main>
     
     
-    <!-- menu -->
+    <!-- menubar and hamburger -->
 
-    <button  id="menu-button" class="fa fa-bars fa-4x"onclick="toggleMenu()" ></button>
 
-    <div id="menu">
-        <button class="menu-item" onclick="showHomePage()">Home</button>
-        <button class="menu-item" onclick="showAboutPage()">About</button>
-        <button class="menu-item" onclick="showSignupPage()">Sign-up</button>
-        <button class="menu-item" onclick="showContactPage()">Contact</button>
-        <button class="menu-item" onclick="showBarsPage()">Bars</button>
-        <button class="menu-item" onclick="showRestaurantsPage()">Restaurants</button>
-    </div>
-    
 
     <script src="main.js"></script>
     <script src="array.js"></script>

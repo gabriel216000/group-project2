@@ -253,9 +253,9 @@ let offer =[
       offer: {coctails: "Gin'n Tonic 1490,- kr"}
   },
 
-  {
-      id: 4,
-      barId: 0,
+ /*{
+    id: 4,
+     barId: 0,
       type: "bar",
       bar_name: "Bastard Brew and Food",
       address: "Vegamótastígur 4, 101 Reykajvík",
@@ -263,7 +263,7 @@ let offer =[
       time: "12:00-22:00",
       offer: {beer: "500kr off", beer: "500kr off"}
       //Vantar mynd
-  },
+  },*/
 
   {
       id: 5,

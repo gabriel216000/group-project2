@@ -1,3 +1,5 @@
+//List of all resturants and bars we have on the website
+//The bars and resturants each have a type - either bar or resturant so we can sort them 
 let places =
 [
     {
@@ -8,7 +10,7 @@ let places =
       happyhours: "12:00-19:00",
       days: "Everyday",
       drinks: {beer: "850,- kr", wine: "850,- kr", rose: "950,- kr", sparklingWine: "950,- kr"},
-      photo: "",
+      photo: "./img/bars/irishman.JPG",
     },
 
     {

@@ -203,6 +203,7 @@ button {
     flex-flow: row wrap;  
 }
 
+
 #restaurants-container {
     color: black; 
     display: flex;

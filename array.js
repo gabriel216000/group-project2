@@ -10,7 +10,7 @@ let places =
       happyhours: "12:00-19:00",
       days: "Everyday",
       drinks: {beer: "850,- kr", wine: "850,- kr", rose: "950,- kr", sparklingWine: "950,- kr"},
-      photo: "./img/bars/irishman.JPG",
+      photo: './images/bars/irishman.JPG',
     },
 
     {
@@ -21,7 +21,7 @@ let places =
         happyhours: "16:00-19:00",
         days: "Everyday",
         drinks: {beer: "900-950,- kr", wine: "1000,- kr", cider: "950,- kr"},
-        photo: "",
+        photo: './images/bars/american.jpg',
       },
 
       {
@@ -32,7 +32,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "900/1000,- kr", wine: "1000,- kr", coctails: "1600,- kr", sparklingWine: "1600,- kr"},
-        photo: "",
+        photo: './images/bars/irishman.JPG', //vantar mytnd fyrir jungle
       },
 
       {
@@ -43,7 +43,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "800-850,- kr", wine: "800,- kr"},
-        photo: "",
+        photo: './images/bars/lebowski.jpg',
       },
 
       {
@@ -54,7 +54,7 @@ let places =
         happyhours: "16:00-19:00",
         days: "Everyday",
         drinks: {beer: "850-950,- kr", wine: "950,- kr", coctails: "1700,- kr", shots: "900,- kr"},
-        photo: "",
+        photo: './images/bars/english.jpg',
       },      
       {
         id: 6,
@@ -64,7 +64,7 @@ let places =
         happyhours: "16:00-17:00",
         days: "Everyday",
         drinks: {beer: "900", wine: "900", coctails: "1800"},
-        photo: "",
+        photo: './images/bars/kaldi.jpg',
       },
       {
         id: 7,
@@ -74,7 +74,7 @@ let places =
         happyhours: "16:00-19:00",
         days: "Everyday",
         drinks: {beer: "2for1", wine: "2for1", Shots: "600", sparklingWine: "1000"},
-        photo: "",
+        photo: './images/bars/danske.jpg',
       },
 
       {
@@ -85,7 +85,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "700", wine: "700"},
-        photo: "",
+        photo: './images/bars/islenski.jpg',
       },
       {
         id: 9,
@@ -95,7 +95,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "710-850", Cider: "800"},
-        photo: "",
+        photo: './images/bars/student.jpg',
       },
       {
         id: 10,
@@ -105,7 +105,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "25% off", wine: "25% off", coctails: "25% off"},
-        photo: "",
+        photo: './images/bars/cocktailbar.JPG',
       },
       
       
@@ -117,7 +117,7 @@ let places =
         happyhours: "15:00-19:00",
         days: "Everyday",
         drinks: {beer: "750-890,- kr", wine: "990,- kr", coctails: "1490,- kr", rose: "990,- kr", sparklingWine: "990"},
-        photo: "",
+        photo: './images/bars/miami.jpg',
       },
 
 
@@ -131,7 +131,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Every weekday",
         drinks: {beer: "990, 1090, 1290,- kr", wine: "1090-1190,- kr", shots: "700-950,- kr"},
-        photo: "",
+        photo: './images/restaurants/svin.jpg',
       },
 
       {
@@ -142,7 +142,7 @@ let places =
         happyhours: "15:00-17:00",
         days: "Everyday",
         drinks: {beer: "990,- kr", wine: "1190,- kr", coctails: "1690,- kr"},
-        photo: "",
+        photo: './images/restaurants/fjallkonan.jpg',
       },
 
       {
@@ -153,7 +153,7 @@ let places =
         happyhours: "17:00-18:00",
         days: "Everyday",
         drinks: {beer: "50% off", wine: "50% off", coctails: "50% off"},
-        photo: "",
+        photo: './images/restaurants/sushi.JPG',
       },
 
       {
@@ -164,7 +164,7 @@ let places =
         happyhours: "12:00-18:00",
         days: "Everyday",
         drinks: {beer: "1000,- kr", wine: "1000,- kr", coctails: "1800,- kr"},
-        photo: "",
+        photo: './images/restaurants/kol.jpg',
       },
 
 
@@ -176,7 +176,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "600,- kr", wine: "850,- kr", shots: "600,- kr"},
-        photo: "",
+        photo: './images/restaurants/slippbarinn.jpg',
       },
 
       {
@@ -187,7 +187,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "850,- kr", wine: "850,- kr"},
-        photo: "",
+        photo: './images/restaurants/for.jpg',
       },
 
       {
@@ -198,7 +198,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "890", wine: "990", rose: "950,- kr", coctails: "1750,- kr"},
-        photo: "",
+        photo: './images/restaurants/punk.jpg',
       },
 
       {
@@ -209,7 +209,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "800-850,- kr", wine: "950,- kr"},
-        photo: "",
+        photo: './images/restaurants/sky.jpg',
       },
 
       {
@@ -220,13 +220,13 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "900,- kr", wine: "900,- kr"},
-        photo: "",
+        photo: './images/restaurants/eiriksson.jpg',
       },
 
 
 ]
 
-
+//Array for places with special deals
 let offer =[
 
   {
@@ -262,6 +262,7 @@ let offer =[
       day: ["monday"],
       time: "12:00-22:00",
       offer: {beer: "500kr off", beer: "500kr off"}
+      //Vantar mynd
   },
 
   {

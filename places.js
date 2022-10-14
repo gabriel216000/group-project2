@@ -4,7 +4,7 @@ places.forEach(element => {
  
 nowlist.innerHTML+= `
   <div id="one">
-                <img class="images" id="cocktailbar" src="images/bars/cocktailbar.JPG" alt="cocktailbar">
+                <img class="images" id="cocktailbar" src="${element.photo}" alt="cocktailbar">
                 <div id="info">
                 <h3>
                     ${element.bar_name}
@@ -84,6 +84,29 @@ restaurantlist.innerHTML+= `
 });
 
 
-
+offer.forEach(element => {
+ 
+    list.innerHTML+= `
+      <div id="one">
+                    <img class="images" id="cocktailbar" src="images/bars/cocktailbar.JPG" alt="cocktailbar">
+                    <div id="info">
+                    <h3>
+                        ${element.barId.bar_name}
+                    </h3>
+                    <p>
+                    ${element.barId.address}
+                    </p>
+                    <div id="clock">
+                        <p>
+                        ${element.day}
+                        </p>
+                    </div>
+                    </div>
+                    
+                </div>
+    `
+    
+    });
+    
 
            

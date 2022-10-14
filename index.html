@@ -41,14 +41,16 @@
             <span class="logo"><img src="images/Tipsy_logo.png" alt="logo"></span>
         </h5>
     </div>
-    
 
+    <!--div fyrir pages-->
+    <div id="special-deals"></div>
+    <div id="favourites"></div>
+    <div id="contact-us"></div>
+    <div id="sign-in"></div>
 
-   
-
-
+    <!--Homepage (happy hour)-->
     <main id="main-section">
-        <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">
+        <img id="main-logo" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()">
         <!-- Homepage shows whats happening right now -->
         <div id="home">
            <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
@@ -59,17 +61,17 @@
                 HAPPENING NOW
             </p>
             
-            
         </div>
-    <!--About page-->
-        <div id="about">
+    
+    <!--Special Deals page-->
+        <div id="special-deals">
             <div id="home">
             
                <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
             </div>
             <div class="section">
-            <h2>About the app</h2>
-            <p>This app holds all of the best deals when it comes to happy hour in bars and restaurants in Reykjavík.</p>
+            <h2>Special Deals</h2>
+            <p>2f1</p>
             
             <h2>About us</h2>
             <img id="author-image" src="images/istockphoto-1262018343-612x612.jpg" alt="Image of the author">
@@ -79,16 +81,16 @@
             
         </div>
         </div>
+    
 
-        <!-- Contact page -->
-
-        <div id="contact">
+    <!-- Contact Us page -->
+        <div id="contact-us">
             <div id="home">
             
                <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
             </div>
             <div class="section">
-            <h2>Contact</h2>
+            <h2>Contact Us</h2>
             <p>
                 Feel free to send me an e-mail at 
                 <span><a href="mailto:gabrielbf909@gmail.com">gabrielbf909@gmail.com</a></span>
@@ -96,7 +98,7 @@
         </div>
         </div>
 
-        <!-- Bar page -->
+    <!-- Bar page -->
         <div id="bars">
             <div id="home">
                 
@@ -106,16 +108,12 @@
             <div class="section">
             <h2 id="place1">Bars in Reykjavík</h2>
             <button id="when">when</button>
-            <div id="bars-container">
-               
-                 
-         </div>
+            <div id="bars-container"></div>
         </div>
-
         </div>
     
 
-        <!-- Restaurant page -->
+    <!-- Restaurant page -->
         <div id="restaurants">
             <div id="home">
             
@@ -143,16 +141,16 @@
         </div>
 
 
+    <!--Sign in page-->
+        <div id="sign-in">
 
-        <!--Sign up page-->
-        <div id="sign-up">
             <div id="home">
             
                 <!--<img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             </div>
             <div class="section">
-            <h2>Sign-up</h2>
-            <div id="sign-up-container">
+            <h2>Sign In</h2>
+            <div id="sign-in-container">
                 
             </div>
 
@@ -168,12 +166,10 @@
     
     <button  id="menu-button" class="fa fa-bars fa-4x"onclick="toggleMenu()" ></button>
     <div id="menu">
-        <button class="menu-item" onclick="showHomePage()">Home</button>
-        <button class="menu-item" onclick="showAboutPage()">About</button>
-        <button class="menu-item" onclick="showSignupPage()">Sign-up</button>
-        <button class="menu-item" onclick="showContactPage()">Contact</button>
-        <button class="menu-item" onclick="showBarsPage()">Bars</button>
-        <button class="menu-item" onclick="showRestaurantsPage()">Restaurants</button>
+        <button class="menu-item" onclick="showSpecialDealsPage()">Special Deals</button>        
+        <button class="menu-item" onclick="showFavouritesPage()">Favourites</button>
+        <button class="menu-item" onclick="showContactUsPage()">Contact Us</button>
+        <button class="menu-item" onclick="showSignInPage()">Sign In</button>
     </div>
 
 

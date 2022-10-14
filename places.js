@@ -1,10 +1,14 @@
-let nowlist = document.getElementById("home");
 
+//I used html code to get how the info appears on home, bars, resturants and special deals
+let nowlist = document.getElementById("home");
+//This is for places that's in the home page and shows whats happening now
 places.forEach(element => {
  
 nowlist.innerHTML+= `
   <div id="one">
-                <img class="images" id="cocktailbar" src="${element.photo}" alt="cocktailbar">
+                <img class="images" id="cocktailbar" src="${element.photo}" alt="Happy hour right now">
+
+
                 <div id="info">
                 <h3>
                     ${element.bar_name}
@@ -26,7 +30,7 @@ nowlist.innerHTML+= `
 
 
 
-
+//Here I put a filter for the bar, now this page only shows the bars
 let barlist = document.getElementById("bars-container");
 
 places.filter (place=>place.type === "bars" )
@@ -35,7 +39,7 @@ places.filter (place=>place.type === "bars" )
  
 barlist.innerHTML+= `
   <div id="one">
-                <img class="images" id="cocktailbar" src="images/bars/cocktailbar.JPG" alt="cocktailbar">
+                <img class="images" id="cocktailbar" src="${element.photo}" alt="Bars">
                 <div id="info">
                 <h3>
                     ${element.bar_name}
@@ -54,6 +58,8 @@ barlist.innerHTML+= `
 `
     
 });
+
+//This filter only shows the places with the type name restaurant
 
 let restaurantlist = document.getElementById("restaurants-container");
 
@@ -63,7 +69,7 @@ places.filter (place=>place.type === "restaurants" ) //arrow function
  
 restaurantlist.innerHTML+= `
   <div id="one">
-                <img class="images" id="cocktailbar" src="images/bars/cocktailbar.JPG" alt="cocktailbar">
+                <img class="images" id="cocktailbar" src="${element.photo}" alt="Restaurant">
                 <div id="info">
                 <h3>
                     ${element.bar_name}
@@ -83,18 +89,19 @@ restaurantlist.innerHTML+= `
     
 });
 
+let offerlist = document.getElementById("specialdeals");
 
 offer.forEach(element => {
- 
-    list.innerHTML+= `
+ const bar= places.filter(place=>place.id === element.barId)[0]
+    offerlist.innerHTML+= `
       <div id="one">
-                    <img class="images" id="cocktailbar" src="images/bars/cocktailbar.JPG" alt="cocktailbar">
+                    <img class="images" id="cocktailbar" src="${bar?.photo}" alt="Special deals">
                     <div id="info">
                     <h3>
-                        ${element.barId.bar_name}
+                        ${places.filter(place=>place.id === element.barId)[0]?.bar_name}
                     </h3>
                     <p>
-                    ${element.barId.address}
+                    ${bar?.address}
                     </p>
                     <div id="clock">
                         <p>

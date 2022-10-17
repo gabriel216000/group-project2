@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-    <link rel="stylesheet" href="stylesi.css">
-    <link rel="stylesheet" href="stylecu.css">
+    <link rel="stylesheet" href="sign-in.css">
+    <link rel="stylesheet" href="contact-us.css">
     <link rel="stylesheet" href="style.css">
     <link rel="array" href="array.js">
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
     <link rel="manifest" href="Favicon/site.webmanifest">
 
     <!--Font Awesome-->
-    <link rel="heart-empty" href="
+    <link rel="heart-empty" href="">
     <i class="fa-light fa-heart"></i>
 
 
@@ -58,21 +58,22 @@
 
     <main id="main-section">
 
-  
+          <img id="main-logo" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()">
             <h2 id="happy">HAPPY HOUR</h2>
             
             <p id="now">HAPPENING NOW</p>
             
 
-        <img id="main-logo" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()">
+
         <!-- Homepage shows whats happening right now -->
-        <div id="home">
+        <div id="home" class="home">
            <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
           
             <div class="bar/res-btn">
                 <!--Bars-Restaurants buttons-->
                 <a class="my-button1" title="Relevant Title" href="#">Bars</a>
                 <a class="my-button2" title="Relevant Title" href="#">Restaurants</a>
+                
             </div>
                  
         </div>
@@ -83,7 +84,7 @@
     
     <!--Special Deals page-->
         <div id="special-deals">
-            <div id="home">
+            <div class="home">
             
                <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
             </div>
@@ -99,15 +100,14 @@
             
         </div>
         </div>
-    
-<h1>hæ</h1>
+
     <!-- Contact Us page -->
-    <div class="title">
+    <div id="contact-us" class="title">
         <h2>Contact Us</h2>
         <p>Is there anything we can do better?<br> 
             Please let us know</p>
     </div>
-    <form action="">
+    <form class="form-contact" action="">
         <div class="half">
             <div class="item">
                 <label for="name">Name</label>
@@ -141,7 +141,7 @@
 
     <!-- Bar page -->
         <div id="bars">
-            <div id="home">
+            <div class="home">
                 
               <!--  <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             
@@ -156,7 +156,7 @@
 
     <!-- Restaurant page -->
         <div id="restaurants">
-            <div id="home">
+            <div class="home">
             
                <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             </div>
@@ -185,7 +185,7 @@
     <!--Sign in page-->
         <div id="sign-in">
 
-            <div id="home">
+            <div class="home">
             
                 <!--<img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
             </div>
@@ -197,7 +197,7 @@
             <h4>Sign in to get the best deals!</h4>
             
             <div class="signin-box">
-                <form id="form">
+                <form class="form-sign-in" id="form">
                     <div class="signin-box">
         
                         <label for="username">Username</label>

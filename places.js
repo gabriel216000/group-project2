@@ -5,7 +5,7 @@ let nowlist = document.getElementById("home");
 places.forEach(element => {
  
 nowlist.innerHTML+= `
-  <div id="one">
+  <div class="one">
                 <img class="images" id="cocktailbar" src="${element.photo}" alt="Happy hour right now">
 
 
@@ -38,7 +38,7 @@ places.filter (place=>place.type === "bars" )
 .forEach(element => {
  
 barlist.innerHTML+= `
-  <div id="one">
+  <div class="one">
                 <img class="images" id="cocktailbar" src="${element.photo}" alt="Bars">
                 <div id="info">
                 <h3>
@@ -68,7 +68,7 @@ places.filter (place=>place.type === "restaurants" ) //arrow function
 .forEach(element => {
  
 restaurantlist.innerHTML+= `
-  <div id="one">
+  <div class="one">
                 <img class="images" id="cocktailbar" src="${element.photo}" alt="Restaurant">
                 <div id="info">
                 <h3>
@@ -94,7 +94,7 @@ let offerlist = document.getElementById("specialdeals");
 offer.forEach(element => {
  const bar= places.filter(place=>place.id === element.barId)[0]
     offerlist.innerHTML+= `
-      <div id="one">
+      <div class="one">
                     <img class="images" id="cocktailbar" src="${bar?.photo}" alt="Special deals">
                     <div id="info">
                     <h3>

@@ -190,8 +190,9 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     width: 320px;
 }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve {
+.one {
     padding-bottom: 20px;
+    width: 320px;
 }
 
 #favourites {

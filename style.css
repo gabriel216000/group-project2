@@ -188,12 +188,15 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     width: 320px;
 }
 
+/* cards */
 .one {
     padding-bottom: 20px;
     width: 320px;
+    margin-right: 10 px;
+    margin-left: 20px;
 }
 
-/*card*/
+/*card container*/
 #favourites {
     color: black; 
     display: flex;
@@ -201,7 +204,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     flex-flow: row wrap;  
 }
 
-/*card*/
+/*card container*/
 .home {
     color: black; 
     display: flex;
@@ -209,7 +212,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     flex-flow: row wrap;  
 }
 
-/*card*/
+/*card container*/
 #bars-container {   
     color: black; 
     display: flex;
@@ -274,6 +277,7 @@ a {
     margin-left: 30px;
     height: 30px;
     margin-right: 30px; 
+    
 }
 
 .my-button1{

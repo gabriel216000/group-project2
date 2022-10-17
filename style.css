@@ -98,8 +98,6 @@ body {
     position: fixed;  
 }
 
-
-
 /*hamburger*/
 #menu-button {
     color: black;
@@ -107,15 +105,13 @@ body {
     position: fixed;
     right: 50px;
     top: 32px;
-    /*
+    /*Styles var merkt fyrir button(?)
     cursor: pointer;
     border: none;
     outline: inherit;
     background: transparent;
     color: inherit; 
-    Styles var merkt fyrir button (?)
     */
-
 }
 
 /*hamburger*/
@@ -197,6 +193,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     width: 320px;
 }
 
+/*card*/
 #favourites {
     color: black; 
     display: flex;
@@ -204,6 +201,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     flex-flow: row wrap;  
 }
 
+/*card*/
 .home {
     color: black; 
     display: flex;
@@ -211,7 +209,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     flex-flow: row wrap;  
 }
 
-
+/*card*/
 #bars-container {   
     color: black; 
     display: flex;
@@ -219,7 +217,7 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     flex-flow: row wrap;  
 }
 
-
+/*card*/
 #restaurants-container {
     color: black; 
     display: flex;

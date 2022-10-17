@@ -16,12 +16,22 @@ nowlist.innerHTML+= `
                 <p>
                 ${element.address}
                 </p>
-                <div id="clock">
+                <div class="clock">
                     <p>
                     ${element.happyhours}
                     </p>
                 </div>
-                </div>
+                <div class="week">
+                <div class=weekday>M</div>
+                <div class=weekday>T</div>
+                <div class=weekday>W</div>
+                <div class=weekday>T</div>
+                <div class=weekday>F</div>
+                <div class=weekday>S</div>
+                <div class=weekday>S</div>
+
+               </div> 
+               </div>
                 
             </div>
 `
@@ -47,7 +57,7 @@ barlist.innerHTML+= `
                 <p>
                 ${element.address}
                 </p>
-                <div id="clock">
+                <div class="clock">
                     <p>
                     ${element.happyhours}
                     </p>
@@ -77,7 +87,7 @@ restaurantlist.innerHTML+= `
                 <p>
                 ${element.address}
                 </p>
-                <div id="clock">
+                <div class="clock">
                     <p>
                     ${element.happyhours}
                     </p>
@@ -89,6 +99,8 @@ restaurantlist.innerHTML+= `
     
 });
 
+
+//This only shows the special deals page
 let offerlist = document.getElementById("specialdeals");
 
 offer.forEach(element => {
@@ -103,10 +115,11 @@ offer.forEach(element => {
                     <p>
                     ${bar?.address}
                     </p>
-                    <div id="clock">
+                    <div class="clock">
                         <p>
                         ${element.day}
                         </p>
+
                     </div>
                     </div>
                     

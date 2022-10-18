@@ -324,3 +324,27 @@ a {
     background: #927abc;
     color: black;
 }
+
+
+
+.w3-display-container {
+    position: relative;
+    display: inline-block; /* <= shrinks container to image size */
+    transition: transform 150ms ease-in-out;
+  }
+  
+  .w3-display-container img { /* for responsiveness */
+     display: block;
+     max-width: 100%;
+     height: auto;
+  }
+  
+  .w3-display-container svg {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+  }
+  
+  

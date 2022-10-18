@@ -5,7 +5,7 @@ let nowlist = document.getElementById("home");
 places.forEach(element => {
  
 nowlist.innerHTML+= `
-  <div id="one">
+  <div class="one">
                 <img class="images" id="cocktailbar" src="${element.photo}" alt="Happy hour right now">
 
 
@@ -16,12 +16,22 @@ nowlist.innerHTML+= `
                 <p>
                 ${element.address}
                 </p>
-                <div id="clock">
+                <div class="clock">
                     <p>
                     ${element.happyhours}
                     </p>
                 </div>
-                </div>
+                <div class="week">
+                <div class=weekday>M</div>
+                <div class=weekday>T</div>
+                <div class=weekday>W</div>
+                <div class=weekday>T</div>
+                <div class=weekday>F</div>
+                <div class=weekday>S</div>
+                <div class=weekday>S</div>
+
+               </div> 
+               </div>
                 
             </div>
 `
@@ -38,7 +48,7 @@ places.filter (place=>place.type === "bars" )
 .forEach(element => {
  
 barlist.innerHTML+= `
-  <div id="one">
+  <div class="one">
                 <img class="images" id="cocktailbar" src="${element.photo}" alt="Bars">
                 <div id="info">
                 <h3>
@@ -47,7 +57,7 @@ barlist.innerHTML+= `
                 <p>
                 ${element.address}
                 </p>
-                <div id="clock">
+                <div class="clock">
                     <p>
                     ${element.happyhours}
                     </p>
@@ -68,7 +78,7 @@ places.filter (place=>place.type === "restaurants" ) //arrow function
 .forEach(element => {
  
 restaurantlist.innerHTML+= `
-  <div id="one">
+  <div class="one">
                 <img class="images" id="cocktailbar" src="${element.photo}" alt="Restaurant">
                 <div id="info">
                 <h3>
@@ -77,7 +87,7 @@ restaurantlist.innerHTML+= `
                 <p>
                 ${element.address}
                 </p>
-                <div id="clock">
+                <div class="clock">
                     <p>
                     ${element.happyhours}
                     </p>
@@ -89,12 +99,14 @@ restaurantlist.innerHTML+= `
     
 });
 
+
+//This only shows the special deals page
 let offerlist = document.getElementById("specialdeals");
 
 offer.forEach(element => {
  const bar= places.filter(place=>place.id === element.barId)[0]
     offerlist.innerHTML+= `
-      <div id="one">
+      <div class="one">
                     <img class="images" id="cocktailbar" src="${bar?.photo}" alt="Special deals">
                     <div id="info">
                     <h3>
@@ -103,10 +115,11 @@ offer.forEach(element => {
                     <p>
                     ${bar?.address}
                     </p>
-                    <div id="clock">
+                    <div class="clock">
                         <p>
                         ${element.day}
                         </p>
+
                     </div>
                     </div>
                     

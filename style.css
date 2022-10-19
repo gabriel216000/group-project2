@@ -1,26 +1,4 @@
-<<<<<<< HEAD
-* {
-    margin: 0px;
-    padding: 0px;
-    
-}
-
-body {
-    font-family: 'Dosis', sans-serif;
-    /*
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/bar.png");
-    */
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    background-color: black;
-    color: white;
-}
-
-
-
 /* Splash screen */
-
 .intro {
     position: fixed;
     z-index: 1;
@@ -46,8 +24,6 @@ body {
     bottom: -20px;
     opacity: 0;
     color: black;
-
-
 }
 
 .logo.active {
@@ -61,27 +37,13 @@ body {
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-
 /* Splash screen end */
-
-
-
-.emphasis {
-    color: #b042ff;
-}
-
 
 .icon-link {
     text-decoration: none;
     color: white;
     margin-right: 1rem;
 }
-
-a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover
-{
-    opacity: 0.5;
-}
-
 
 
 #when {
@@ -112,28 +74,12 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     padding-right: 1450px;
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
-    background-position: left right;
-    position: fixed;
-    
-     
-    
+    position: fixed;  
 }
 
-button {
-    cursor: pointer;
-    border: none;
-    outline: inherit;
-    background: transparent;
-    color: inherit;
-}
-
-#menu-button {
-    color: black;
-    font-size: large;
-    position: fixed;
-    right: 50px;
-    top: 32px;
-
+/*hamburger og annað*/
+#special-deals, #favourites, #contact-us, #sign-in, #bars, #restaurants{
+    display: none;
 }
 
 #menu {
@@ -142,21 +88,11 @@ button {
     width: 100vw;
     flex-direction: column;
     display: none;
-
-}
-
-.menu-item {
-    margin-bottom: 2rem;
-    font-size: 3rem;
 }
 
 #about, #contact, #bars, #restaurants, #sign-up {
     display: none;
 }
-
-
-
-
 
 #clock {
     color: #b042ff;
@@ -165,18 +101,14 @@ button {
 
 #cocktailbar {
     object-position: 25% 25%;
-    
 }
 
 #petersen {
     object-position: 0% 90%;
-    
-    
 }
 
 #sushi{
     object-position: 25% 25%;
-    
 }
 
 #place1, #place2 {
@@ -186,7 +118,6 @@ button {
 .section {
     padding-left: 40px;
     padding-top: 100px;
-    
 }
 
 .images {
@@ -207,8 +138,6 @@ button {
     margin-bottom: 5px;
 }
 
-
-
 #left, #middle, #right, #last {
     padding-left: 20px;
     width: 320px;
@@ -218,16 +147,12 @@ button {
     padding-bottom: 20px;
 }
 
-
 #home {
-    
     color: black; 
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-
 }
-
 
 #bars-container {
     
@@ -235,12 +160,7 @@ button {
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-
 }
-
-
-
-
 
 #restaurants-container {
     color: black; 
@@ -248,8 +168,6 @@ button {
     flex-direction: row; 
     flex-flow: row wrap; 
 }
-
-
 
 h2 {
     font-size: 2rem;
@@ -260,7 +178,6 @@ h2 {
     height: 8rem;
     border-radius: 50%;
     float: left;
-
 }
 
 #about p {
@@ -273,7 +190,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.04);
     margin-left: 0.5rem;
     color: #e1affd;
-
 }
 
 #contact p {
@@ -302,11 +218,53 @@ a {
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 8px;
-    right: 8px;
-  }
-  
-=======
+    margin-right: 30px; 
+}
+
+.my-button1{
+    border-radius: 5px 0 0 5px;
+    margin-right: 3px;
+}
+
+.my-button2 {
+    border-radius: 0 5px 5px 0;
+    margin-left: 3px;
+}
+
+.my-button:hover {
+    background: #927abc;
+    color: black;
+}
+
+/*nav-hamburger*/
+/*#menu-button {
+    color: black;
+    font-size: large;
+    position: fixed;
+    right: 50px;
+    top: 32px;
+}*/
+
+/*nav-hamburger*/
+ /*#menu {
+    position: fixed;
+    top: 30vh;
+    width: 100vw;
+    flex-direction: column;
+    display: none;
+}*/
+
+/*nav-hamburger*/
+/*.menu-item {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}*/
+
+/*nav-hamburger og annað*/
+/*a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
+    opacity: 0.5;
+}*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -323,125 +281,6 @@ body {
     background-color: black;
     color: white;
 }
-
-/* Splash screen */
-.intro {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(to top, purple,  orange);
-    transition: 1s;
-}
-
-.logo-header {
-    position: absolute;
-    top: 50%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-}
-
-.logo {
-    position: absolute;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
-    color: black;
-}
-
-.logo.active {
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-}
-
-.logo.fade {
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
-}
-/* Splash screen end */
-
-
-.emphasis {
-    color: #b042ff;
-}
-
-.icon-link {
-    text-decoration: none;
-    color: white;
-    margin-right: 1rem;
-}
-
-#when {
-    color: white;
-    padding-bottom: 10px;
-    margin-left: 265px;
-}
-
-#now {
-    margin-top: -20px;
-    text-align: center;
-    font-size: 20px;
-    color: rgb(180, 155, 155);
-}
-
-#happy{
-    padding-top: 100px;
-    text-align: center;
-    font-size: 50px;
-}
-
-#main-logo {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    padding-right: 2500px;
-    width: 60px;
-    background-image: linear-gradient(to top, purple,  orange);
-    background-position: left right;
-    position: fixed;  
-}
-
-/*hamburger*/
-#menu-button {
-    color: black;
-    font-size: large;
-    position: fixed;
-    right: 50px;
-    top: 32px;
-}
-   
-
-/*hamburger*/
-#menu {
-    position: fixed;
-    top: 30vh;
-    width: 100vw;
-    flex-direction: column;
-    display: none;
-}
-
-/*hamburger*/
-.menu-item {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
-
-/*hamburger og annað*/
-#special-deals, #favourites, #contact-us, #sign-in, #bars, #restaurants{
-    display: none;
-}
-
-/*hamburger og annað*/
-a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
-    opacity: 0.5;
-}
-
-
 
 #place1, #place2 {
     margin: 40px 0 20px 60px;
@@ -460,22 +299,19 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     border-radius: 8px 8px 0px 0px; 
 }
 
-
-
 #info h3, p{
     margin-bottom: 5px;
-
 }
+
 /* H3 inside cards - name of place */
 #info h3 {
 font-size: 20px;
-
 }
+
 /* P inside of cards - address of place */
 #info p {
     font-size: 16px;
 }
-
 
 #left, #middle, #right, #last {
     padding-left: 20px;
@@ -528,6 +364,7 @@ font-size: 20px;
     flex-direction: row; 
     flex-flow: row wrap;  
 }
+
 /*Clock inside cards*/
 .clock {
     color: #F79DF7;
@@ -537,13 +374,13 @@ font-size: 20px;
     margin-bottom: 13px;
 }
 
-
 /*  Stafirnir fyrir vikuna á hverju cardi  */
 /*Div yfir alla stafina*/
 .week {
     display: flex;
     flex-direction: row;
 }
+
 /* Div fyrir hvern og einn staf fyrir sig */
 .happyday {
     background-color: #BE9CF7;
@@ -561,14 +398,11 @@ font-size: 20px;
     line-height: 23px;
     vertical-align: middle;
     font-weight: 600;
-    
 }
 
 .weekdays {
     background-color:#927abc;
 }
-
-
 
 h2 {
     font-size: 2rem;
@@ -607,6 +441,7 @@ a {
     text-decoration: none;
     color: #b042ff;
 }
+
 /*Buttons on homepage*/
 .my-button1, .my-button2 {
     display: inline-block;
@@ -638,8 +473,6 @@ a {
     color: black;
 }
 
-
-
 .w3-display-container {
     position: relative;
     display: inline-block; /* <= shrinks container to image size */
@@ -660,5 +493,3 @@ a {
     right: 8px;
   }
   
-  
->>>>>>> main

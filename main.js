@@ -1,6 +1,7 @@
-const menuButton = document.getElementById("menu-button");
+
 const menu = document.getElementById("menu");
 const mainSection = document.getElementById("main-section");
+const hamburger = document.getElementsByClassName('hamburger-lines');
 
 /* intro start */ 
 let intro = document.querySelector(".intro");
@@ -29,14 +30,17 @@ window.addEventListener("DOMContentLoaded", ()=>{
 })
 /* intro end*/
 
-
 /*hamburger menu, open-close*/ 
-const specialDeals = document.getElementById("special-deals");
+const specialDeals = document.getElementById("special-delas");
 const favourites = document.getElementById("favourites");
 const contactUs = document.getElementById("contact-us");
 const signIn = document.getElementById("sign-in");
+
+const menuButton = document.getElementById('menu');
+
 const bars = document.getElementById("bars")
 const restaurants = document.getElementById("restaurants")
+
 
 const home = document.getElementById("home");
 let currentPage = home;
@@ -44,7 +48,7 @@ let currentPage = home;
 let isMenuShowing=false;
 
 function toggleMenu() {
-
+console.log("haló")
     if (isMenuShowing)
         closeMenu();
     else 
@@ -52,7 +56,7 @@ function toggleMenu() {
 }
 
 function openMenu() {
-    menuButton.classList = ("fa fa-times fa-4x")
+    menuButton.classList = ("menu-list")
 
     menu.style.display = "flex";
 
@@ -61,8 +65,9 @@ function openMenu() {
     mainSection.style.opacity = "0.5"
 }
 
+/*"fa fa-bars fa-4x" er tengt við upprunulega takkann*/
 function closeMenu() {
-    menuButton.classList = ("fa fa-bars fa-4x");
+    menuButton.classList = ("hamburger-lines");
 
     menu.style.display = "none";
 
@@ -116,7 +121,7 @@ handleRefresh()
 function handleRefresh() {
     const prevPageID = sessionStorage.getItem("pageID");
     if(prevPageID) {
-        [specialDeals, favourites, contactUs, signIn].forEach(section =>{
+        [].forEach(section =>{
             if(section.id === prevPageID)
                 changePage(section);
         });

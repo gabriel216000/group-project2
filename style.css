@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    
 }
 
 body {
@@ -16,10 +15,7 @@ body {
     color: white;
 }
 
-
-
 /* Splash screen */
-
 .intro {
     position: fixed;
     z-index: 1;
@@ -45,8 +41,6 @@ body {
     bottom: -20px;
     opacity: 0;
     color: black;
-
-
 }
 
 .logo.active {
@@ -60,28 +54,18 @@ body {
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-
 /* Splash screen end */
-
 
 
 .emphasis {
     color: #b042ff;
 }
 
-
 .icon-link {
     text-decoration: none;
     color: white;
     margin-right: 1rem;
 }
-
-a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover
-{
-    opacity: 0.5;
-}
-
-
 
 #when {
     color: white;
@@ -96,66 +80,62 @@ a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:ho
     color: rgb(180, 155, 155);
 }
 
-
 #happy{
     padding-top: 100px;
     text-align: center;
     font-size: 50px;
 }
 
-
 #main-logo {
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    padding-right: 1450px;
+    padding-right: 2500px;
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
     background-position: left right;
-    position: fixed;
-    
-     
-    
+    position: fixed;  
 }
 
-button {
-    cursor: pointer;
-    border: none;
-    outline: inherit;
-    background: transparent;
-    color: inherit;
-}
-
+/*hamburger*/
 #menu-button {
     color: black;
     font-size: large;
     position: fixed;
     right: 50px;
     top: 32px;
-
 }
+    /*Styles var merkt fyrir button(?)
+    cursor: pointer;
+    border: none;
+    outline: inherit;
+    background: transparent;
+    color: inherit;*/ 
 
+/*hamburger*/
 #menu {
     position: fixed;
     top: 30vh;
     width: 100vw;
     flex-direction: column;
     display: none;
-
 }
 
+/*hamburger*/
 .menu-item {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
 
-#about, #contact, #bars, #restaurants, #sign-up {
+/*hamburger og annað*/
+#special-deals, #favourites, #contact-us, #sign-in, #bars, #restaurants{
     display: none;
 }
 
-
-
-
+/*hamburger og annað*/
+a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
+    opacity: 0.5;
+}
 
 #clock {
     color: #b042ff;
@@ -163,19 +143,15 @@ button {
 }
 
 #cocktailbar {
-    object-position: 25% 25%;
-    
+    object-position: 25% 25%; 
 }
 
 #petersen {
     object-position: 0% 90%;
-    
-    
 }
 
 #sushi{
     object-position: 25% 25%;
-    
 }
 
 #place1, #place2 {
@@ -185,7 +161,6 @@ button {
 .section {
     padding-left: 40px;
     padding-top: 100px;
-    
 }
 
 .images {
@@ -206,41 +181,41 @@ button {
     margin-bottom: 5px;
 }
 
-
-
 #left, #middle, #right, #last {
     padding-left: 20px;
     width: 320px;
 }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve {
+.one {
     padding-bottom: 20px;
+    width: 320px;
 }
 
-
-#home {
-    
+/*card*/
+#favourites {
     color: black; 
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-
 }
 
-
-#bars-container {
-    
+/*card*/
+.home {
     color: black; 
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-
 }
 
+/*card*/
+#bars-container {   
+    color: black; 
+    display: flex;
+    flex-direction: row; 
+    flex-flow: row wrap;  
+}
 
-
-
-
+/*card*/
 #restaurants-container {
     color: black; 
     display: flex;
@@ -248,18 +223,16 @@ button {
     flex-flow: row wrap; 
 }
 
-
-
 h2 {
     font-size: 2rem;
     padding-bottom: 28px;
+    color: white;
 }
 
 #author-image {
     height: 8rem;
     border-radius: 50%;
     float: left;
-
 }
 
 #about p {
@@ -272,14 +245,46 @@ h2 {
     background-color: rgba(255, 255, 255, 0.04);
     margin-left: 0.5rem;
     color: #e1affd;
-
 }
 
-#contact p {
+#contact-us p {
     font-size: 2rem;
 }
 
 a {
     text-decoration: none;
     color: #b042ff;
+}
+
+.my-button1, .my-button2 {
+    /*display: inline-block;*/
+    display: inline;
+    background: #BE9CF7; /* background color */
+    color: black; /* text color */
+    font-size: 1.5em;
+    font-family: ‘Georgia’, serif;
+    border-radius: 5px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 30px;
+    margin-right: 30px; 
+}
+
+.my-button1{
+    border-radius: 5px 0 0 5px;
+    margin-right: 3px;
+}
+
+.my-button2 {
+    border-radius: 0 5px 5px 0;
+    margin-left: 3px;
+}
+
+.my-button:hover {
+    background: #927abc;
+    color: black;
 }

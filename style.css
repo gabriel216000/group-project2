@@ -324,7 +324,7 @@ a {
     width: 131px;
 }
 
-.my-button:hover {
+.my-button1:hover, .my-button2:hover {
     background: #927abc;
     color: black;
 }

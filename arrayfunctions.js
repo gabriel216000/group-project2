@@ -2,7 +2,7 @@
 const nextHh = places.filter((bar=>{ //Filter for the array bars
     const d = new Date(); 
     const day = d.getDay(); //finding what day it is today
-    if(bar.days == "Every weekday"){
+    if(bar.days == "weekdays"){
         if( !(day > 0 && day < 6 )) {
             //Ef það er helgi þá birtast virkir dagar ekki If there's weekend we don't get the weekdays
             return false

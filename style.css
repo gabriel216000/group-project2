@@ -6,7 +6,10 @@
 body {
     font-family: 'Dosis', sans-serif;
     /*
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/bar.png");
+    background-image: @keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+ar-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/bar.png");
     */
     background-position: center;
     background-size: cover;
@@ -93,48 +96,12 @@ body {
     padding-right: 2500px;
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
-    background-position: left right;
     position: fixed;  
-}
-
-/*hamburger*/
-#menu-button {
-    color: black;
-    font-size: large;
-    position: fixed;
-    right: 50px;
-    top: 32px;
-}
-    /*Styles var merkt fyrir button(?)
-    cursor: pointer;
-    border: none;
-    outline: inherit;
-    background: transparent;
-    color: inherit;*/ 
-
-/*hamburger*/
-#menu {
-    position: fixed;
-    top: 30vh;
-    width: 100vw;
-    flex-direction: column;
-    display: none;
-}
-
-/*hamburger*/
-.menu-item {
-    margin-bottom: 2rem;
-    font-size: 3rem;
 }
 
 /*hamburger og annað*/
 #special-deals, #favourites, #contact-us, #sign-in, #bars, #restaurants{
     display: none;
-}
-
-/*hamburger og annað*/
-a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
-    opacity: 0.5;
 }
 
 #clock {
@@ -288,3 +255,32 @@ a {
     background: #927abc;
     color: black;
 }
+
+/*nav-hamburger*/
+/*#menu-button {
+    color: black;
+    font-size: large;
+    position: fixed;
+    right: 50px;
+    top: 32px;
+}*/
+
+/*nav-hamburger*/
+ /*#menu {
+    position: fixed;
+    top: 30vh;
+    width: 100vw;
+    flex-direction: column;
+    display: none;
+}*/
+
+/*nav-hamburger*/
+/*.menu-item {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}*/
+
+/*nav-hamburger og annað*/
+/*a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
+    opacity: 0.5;
+}*/

@@ -35,7 +35,12 @@ const specialDeals = document.getElementById("special-delas");
 const favourites = document.getElementById("favourites");
 const contactUs = document.getElementById("contact-us");
 const signIn = document.getElementById("sign-in");
+
 const menuButton = document.getElementById('menu');
+
+const bars = document.getElementById("bars")
+const restaurants = document.getElementById("restaurants")
+
 
 const home = document.getElementById("home");
 let currentPage = home;
@@ -87,6 +92,12 @@ function showSignInPage() {
 }
 function showHomePage() {
     changePage(home);
+}
+function showBars() {
+    changePage(bars);
+}
+function showRestaurants() {
+    changePage(restaurants);
 }
 
 /*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 

@@ -31,10 +31,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
 /* intro end*/
 
 /*hamburger menu, open-close*/ 
-const specialDeals = document.getElementById("special-delas");
-const favourites = document.getElementById("favourites");
-const contactUs = document.getElementById("contact-us");
-const signIn = document.getElementById("sign-in");
+const specialDeals = document.getElementById("SpecialDelas");
+const favourites = document.getElementById("Favourites");
+const contactUs = document.getElementById("ContactUs");
+const signIn = document.getElementById("SignIn");
 
 const menuButton = document.getElementById('menu');
 

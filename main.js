@@ -42,7 +42,7 @@ const bars = document.getElementById("bars")
 const restaurants = document.getElementById("restaurants")
 
 
-const home = document.getElementById("main-section");
+const home = document.getElementById("home");
 let currentPage = home;
 
 let isMenuShowing=false;
@@ -104,10 +104,8 @@ function showRestaurants() {
 function changePage(newPage) {
     console.log(newPage)
     if ( currentPage !==newPage ) {
-        console.log (newPage)
         currentPage.style.display = "none";
         newPage.style.display = "block";
-        console.log (newPage)
         currentPage = newPage;    
     }
     closeMenu();

@@ -90,7 +90,7 @@
     display: none;
 }
 
-#about, #contact, #bars, #restaurants, #sign-up {
+#about, #contact, #bars, #restaurants, #sign-up, #sign-in, .form-contact{
     display: none;
 }
 

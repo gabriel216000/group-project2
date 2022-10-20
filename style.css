@@ -17,7 +17,7 @@ body {
 /* Splash screen */
 .intro {
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -63,6 +63,7 @@ body {
 
 
 /*#when {
+
     color: white;
     padding-bottom: 10px;
     margin-left: 265px;
@@ -75,22 +76,21 @@ body {
     color: rgb(180, 155, 155);
 }
 
-
 #happy{
     padding-top: 100px;
     text-align: center;
     font-size: 50px;
 }
 
-
 #main-logo {
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    padding-right: 1450px;
+    padding-right: 2500px;
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
     position: fixed;  
+    z-index: 990;
 }
 
 /*hamburger og annað*/
@@ -98,15 +98,7 @@ body {
     display: none;
 }
 
-#menu {
-    position: fixed;
-    top: 30vh;
-    width: 100vw;
-    flex-direction: column;
-    display: none;
-}
-
-#about, #contact, #bars, #restaurants, #sign-up {
+#about, #contact, #bars, #restaurants, #sign-up, #sign-in, .form-contact{
     display: none;
 }
 
@@ -311,7 +303,6 @@ a {
     margin-top: 20px;
     font-size: 20px;
     letter-spacing: 6%;
-
 }
 
 /* P inside of cards - address of place */
@@ -499,19 +490,19 @@ a {
     position: relative;
     display: inline-block; /* <= shrinks container to image size */
     transition: transform 150ms ease-in-out;
-  }
+}
   
-  .w3-display-container img { /* for responsiveness */
-     display: block;
-     max-width: 100%;
-     height: auto;
-  }
+.w3-display-container img { /* for responsiveness */
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
   
-  .w3-display-container svg {
+.w3-display-container svg {
     position: absolute;
     width: 30px;
     height: 30px;
     top: 8px;
     right: 8px;
-  }
+}
   

@@ -31,10 +31,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
 /* intro end*/
 
 /*hamburger menu, open-close*/ 
-const specialDeals = document.getElementById("special-delas");
+const specialDeals = document.getElementById("specialdeals");
 const favourites = document.getElementById("favourites");
 const contactUs = document.getElementById("contact-us");
-const signIn = document.getElementById("sign-in");
+const signIn = document.getElementById("SignIn");
 
 const menuButton = document.getElementById('menu');
 
@@ -42,7 +42,7 @@ const bars = document.getElementById("bars")
 const restaurants = document.getElementById("restaurants")
 
 
-const home = document.getElementById("home");
+const home = document.getElementById("main-section");
 let currentPage = home;
 
 let isMenuShowing=false;
@@ -102,6 +102,7 @@ function showRestaurants() {
 
 /*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 
 function changePage(newPage) {
+    console.log(newPage)
     if ( currentPage !==newPage ) {
         console.log (newPage)
         currentPage.style.display = "none";

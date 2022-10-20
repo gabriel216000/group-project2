@@ -1,29 +1,39 @@
-
 /*nav-hamborgara línur*/
 .navbar input[type="checkbox"]
 .navbar .hamburger-lines {
   display: none;
+  z-index: 1000;
 }
 
 #menu {
     position: fixed;
+    top: 10vh;
+    left: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    display: block;
+    flex-direction: column;
+    background-color: none;
+    padding-top: 120px;
+    transition: 0.4s;
 }
 
 /*nav-hamborgara línur*/
 .navbar-container input[type="checkbox"],
 .navbar-container .hamburger-lines {
   display: block;
+  z-index: 1000;
 }
 
 /*nav-Staðsetning á glugganum sjálfum*/
 .navbar-container input[type="checkbox"] {
   position: absolute;
   display: block;
-  height: 32px;
-  width: 30px;
-  top: 20px;
-  right: 20px;
-  z-index: 5;
+  height: 40px;
+  width: 40px;
+  top: 22px;
+  right: 28px;
+  z-index: 1001;
   opacity: 0;
 }
 
@@ -49,9 +59,9 @@
   display: block;
   height: 23px;
   width: 35px;
-  position: absolute;
+  position: fixed;
   right: 0px;
-  z-index: 2;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,21 +91,8 @@
   transition: transform 0.4s ease-in-out;
 }
 
-#menu {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    min-height: 100vh;
-    display: block;
-    background-color: none;
-    padding-top: 120px;
-    transition: 0.4s;
-}
-
 #menu.is-active {
     left: 0;
-
 }
 
 #menu .menu-item {
@@ -125,3 +122,8 @@
     from {left: 100%;}
     to {left: 0%;}
   }
+
+.logoimg {
+  width: 120%;
+  height: auto;
+}

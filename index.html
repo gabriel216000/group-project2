@@ -33,7 +33,7 @@
 
     <!--nav-menubar and hamburger-->
     <nav>
-        <img id="main-logo" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()"> 
+        <div id="main-logo"><img class="logoimg" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()"></div>
            
         <div class="navbar-container container">
         <input type="checkbox" name="" id="" onclick="toggleMenu()">
@@ -45,10 +45,12 @@
 
         <!--menu er mobile-nav og menu-item er a-->
         <div id="menu"> 
+
             <button class="menu-item" onclick="showSpecialDealsPage()">Special Deals</button>        
             <button class="menu-item" onclick="showFavouritesPage()">Favourites</button>
             <button class="menu-item" onclick="showContactUsPage()">Contact Us</button>
             <button class="menu-item" onclick="showSignInPage()">Sign In</button>
+
         </div>
     </nav>
 
@@ -61,10 +63,8 @@
     </div>
 
     <!--div fyrir pages-->
-    <div id="special-deals"></div>
+
     <div id="favourites"></div>
-    <div id="contact-us"></div>
-    <div id="sign-in"></div>
 
     <!--Homepage (happy hour)-->
 
@@ -82,17 +82,11 @@
                 
             </div>
 
-        <!-- Homepage shows whats happening right now -->
-        <div id="home" class="home">
-           <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
-          
-                 
-        </div>
-
     <!--About page-->
         <div id="about">
         </div>
     
+
     <!--Special Deals page-->
         <div id="special-deals">
             <div class="home">
@@ -111,6 +105,7 @@
             
         
         </div>
+
 
     <!-- Contact Us page -->
     <div id="contact-us" class="title">
@@ -175,8 +170,8 @@
             <div id="restaurants-container">
         </div>
 
-
             <h2 id="place2">Special Deals</h2>
+
         <div id="specialdeals">
             <div class="home">
             </div>
@@ -186,8 +181,11 @@
           <!--  <button id="when">when</button>-->
             <div id="specialdeals-container">
 
-        
+        </div>
 
+
+        </div>
+    </div>
 
     <!--Sign in page-->
         <div id="sign-in">
@@ -240,6 +238,7 @@
                         <p>Forgot password?</p>
                     </div>
                     <!--<input type="button" value="Sign In">-->
+                    
                     <button id="btn" type="submit">Sign In</button>
                     <div id="testingTwo">
                     <p>Not a member? <div id="signUp">Sign up</div></p>
@@ -255,7 +254,7 @@
             </div>
 
             </div>
-            
+        </div>
     
         </div>
 

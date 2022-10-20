@@ -1,6 +1,6 @@
 
 //I used html code to get how the info appears on home, bars, resturants and special deals
-let nowlist = document.getElementById("home");
+let nowlist = document.getElementById("main-section");
 //This is for places that's in the home page and shows whats happening now
 const like=(svgdiv)=>{
     console.log(svgdiv)

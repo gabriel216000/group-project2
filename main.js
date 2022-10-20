@@ -42,7 +42,7 @@ const bars = document.getElementById("bars")
 const restaurants = document.getElementById("restaurants")
 
 
-const home = document.getElementById("home");
+const home = document.getElementById("main-section");
 let currentPage = home;
 
 let isMenuShowing=false;

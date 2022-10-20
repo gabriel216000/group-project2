@@ -59,19 +59,17 @@
     color: rgb(180, 155, 155);
 }
 
-
 #happy{
     padding-top: 100px;
     text-align: center;
     font-size: 50px;
 }
 
-
 #main-logo {
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    padding-right: 1450px;
+    padding-right: 2500px;
     width: 60px;
     background-image: linear-gradient(to top, purple,  orange);
     position: fixed;  

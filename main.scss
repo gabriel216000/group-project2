@@ -22,7 +22,7 @@
   height: 32px;
   width: 30px;
   top: 20px;
-  right: 20px;
+  right: 35px;
   z-index: 5;
   opacity: 0;
 }
@@ -85,6 +85,7 @@
     position: fixed;
     top: 0;
     left: 100%;
+    z-index: 2;
     width: 100%;
     min-height: 100vh;
     display: block;

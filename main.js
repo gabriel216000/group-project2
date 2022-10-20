@@ -1,6 +1,5 @@
-
 const menu = document.getElementById("menu");
-const mainSection = document.getElementById("main-section");
+const home = document.getElementById("home");
 const hamburger = document.getElementsByClassName('hamburger-lines');
 
 /* intro start */ 
@@ -31,10 +30,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
 /* intro end*/
 
 /*hamburger menu, open-close*/ 
-const specialDeals = document.getElementById("specialdeals");
+const specialDeals = document.getElementById("special-deals");
 const favourites = document.getElementById("favourites");
 const contactUs = document.getElementById("contact-us");
-const signIn = document.getElementById("SignIn");
+const signIn = document.getElementById("sign-in");
 
 const menuButton = document.getElementById('menu');
 
@@ -42,13 +41,11 @@ const bars = document.getElementById("bars")
 const restaurants = document.getElementById("restaurants")
 
 
-const home = document.getElementById("home");
 let currentPage = home;
 
 let isMenuShowing=false;
 
 function toggleMenu() {
-console.log("haló")
     if (isMenuShowing)
         closeMenu();
     else 
@@ -62,7 +59,7 @@ function openMenu() {
 
     isMenuShowing = true;
 
-    mainSection.style.opacity = "0.5"
+    home.style.opacity = "0.5"
 }
 
 /*"fa fa-bars fa-4x" er tengt við upprunulega takkann*/
@@ -73,7 +70,7 @@ function closeMenu() {
 
     isMenuShowing = false;
 
-    mainSection.style.opacity = "1"
+    home.style.opacity = "1"
 }
 
 /*hamburger menu, hver síða fyrir sig*/ 
@@ -105,7 +102,13 @@ function changePage(newPage) {
     console.log(newPage)
     if ( currentPage !==newPage ) {
         currentPage.style.display = "none";
-        newPage.style.display = "block";
+        if (newPage.id==="home") {
+            newPage.style.display = "flex";
+        }
+        else {
+            newPage.style.display = "block";
+        }
+
         currentPage = newPage;    
     }
     closeMenu();

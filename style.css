@@ -14,6 +14,7 @@ body {
     background-color: black;
     color: white;
 }
+
 /* Splash screen */
 .intro {
     position: fixed;
@@ -61,22 +62,23 @@ body {
     margin-right: 1rem;
 }
 
-
 /*#when {
-
     color: white;
     padding-bottom: 10px;
     margin-left: 265px;
 }*/
 
 #now {
-    margin-top: -20px;
+    margin-top: 20px;
+    margin-bottom: 70px;
     text-align: center;
     font-size: 20px;
     color: rgb(180, 155, 155);
 }
 
-#happy{
+#happytext{
+    margin-top: 60px;
+    margin-bottom: 10px;
     padding-top: 100px;
     text-align: center;
     font-size: 50px;
@@ -119,7 +121,7 @@ body {
     object-position: 25% 25%;
 }
 */
-#place1, #place2 {
+#bars-page, #restaurants-page, #special-deals-page {
     margin: 40px 0 20px 60px;
 }
 
@@ -174,29 +176,6 @@ body {
     flex-flow: row wrap; 
 }
 
-h2 {
-    font-size: 2rem;
-    padding-bottom: 28px;
-}
-
-#author-image {
-    height: 8rem;
-    border-radius: 50%;
-    float: left;
-}
-
-#about p {
-    display: inline-block;
-    font-size: 1.2rem;
-    width: 60%;
-    padding: 1rem;
-    padding-top: 0px;
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.04);
-    margin-left: 0.5rem;
-    color: #e1affd;
-}
-
 #contact p {
     font-size: 2rem;
 }
@@ -240,52 +219,6 @@ a {
     background: #927abc;
     color: black;
 }
-
-/*nav-hamburger*/
-/*#menu-button {
-    color: black;
-    font-size: large;
-    position: fixed;
-    right: 50px;
-    top: 32px;
-}*/
-
-/*nav-hamburger*/
- /*#menu {
-    position: fixed;
-    top: 30vh;
-    width: 100vw;
-    flex-direction: column;
-    display: none;
-}*/
-
-/*nav-hamburger*/
-/*.menu-item {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}*/
-
-/*nav-hamburger og annað*/
-/*a:hover, .menu-item:hover, #menu-button:hover, #when:hover, #bars-restaurants:hover{
-    opacity: 0.5;
-}
-
-*/
-#left, #middle, #right, #last {
-    padding-left: 20px;
-    width: 320px;
-}
-
-#place1, #place2 {
-    margin: 40px 0 20px 60px;
-}
-
-
-
-
-
-
-
 
 /* STYLES FOR CARDS */
 

@@ -9,7 +9,7 @@
     margin-bottom: 48px;
 }
 
-.title h2{
+.title .header2{
     width: 300px;
     margin: auto;
     text-align: center;
@@ -210,21 +210,3 @@
     }
 
 }
-
-/*root og body þurfa bara að koma einu sinni fram í einu css skjali annars mun það hafa neikvæða áhrif á hvort annað.
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    background: #202020;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-*/

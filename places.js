@@ -86,3 +86,4 @@ offer.forEach(element => {
         </div>
     `
 });
+

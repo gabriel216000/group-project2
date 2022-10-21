@@ -60,3 +60,7 @@ const getPlacesHTML = function(places,container){
         `   
         });
 }
+
+function expand(card) {
+    card.classList.toggle('card-expanded');
+}

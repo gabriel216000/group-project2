@@ -92,13 +92,19 @@ function showHomePage() {
 }
 function showBars() {
     changePage(bars);
+    document.getElementById("happytext").innerText ="BARS"
+    document.getElementById("now").style.color = "black"
 }
 function showRestaurants() {
     changePage(restaurants);
+    document.getElementById("happytext").innerText ="RESTAURANTS"
+    document.getElementById("now").style.color = "black"
 }
 
 /*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 
 function changePage(newPage) {
+    document.getElementById("happytext").innerText ="HAPPY HOUR"
+    document.getElementById("now").innerText ="HAPPENING NOW"
     document.querySelector('.navbar-container input[type="checkbox"]').checked = false
     if( currentPage !==newPage ) {
         currentPage.style.display = "none";

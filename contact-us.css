@@ -1,4 +1,3 @@
-
 .form-contact {
     background: #363636;
     width: 320px;
@@ -9,7 +8,7 @@
     margin-bottom: 48px;
 }
 
-.title h2{
+.title .header2{
     width: 300px;
     margin: auto;
     text-align: center;
@@ -124,12 +123,11 @@
     opacity: 0.8;
     transition: 0.3s;
     background: #fe90fe;
-  }
+}
 
 .form-contact .half .item input:hover, .form-contact .full textarea:hover {
     background: #cfcece;
     transition: 0.3s;
-
 }
 
 .text p {
@@ -157,7 +155,6 @@
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-
 }
 
 .popup h2 {
@@ -208,23 +205,4 @@
         text-align: right;
 
     }
-
 }
-
-/*root og body þurfa bara að koma einu sinni fram í einu css skjali annars mun það hafa neikvæða áhrif á hvort annað.
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    background: #202020;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-*/

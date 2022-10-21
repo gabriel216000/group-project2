@@ -9,7 +9,7 @@ let places =
       address: "Klapparstígur 27, 101 Reykjavík",
       happyhours: "12:00-19:00",
       days: "Everyday",
-      drinks: {beer: "850,- kr", wine: "850,- kr", rose: "950,- kr", sparklingWine: "950,- kr"},
+      drinks: {beer: "Beer <br> 850,- kr", wine: "Wine <br> 850,- kr", rose: "Rose <br> 950,- kr", sparklingWine: "Sparkling Wine <br> 950,- kr"},
       photo: './images/bars/irishman.JPG',
     },
 
@@ -20,7 +20,7 @@ let places =
         address: "Austurstræti 8, 101 Reykjavík",
         happyhours: "16:00-19:00",
         days: "Everyday",
-        drinks: {beer: "900-950,- kr", wine: "1000,- kr", cider: "950,- kr"},
+        drinks: {beer: "Beer <br> 900-950,- kr", wine: "Wine <br> 1000,- kr", cider: "Cider <br> 950,- kr"},
         photo: './images/bars/american.jpg',
       },
 
@@ -31,7 +31,7 @@ let places =
         address: "Austurstræti 9, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
-        drinks: {beer: "900/1000,- kr", wine: "1000,- kr", coctails: "1600,- kr", sparklingWine: "1600,- kr"},
+        drinks: {beer: "Beer <br> 900/1000,- kr", wine: "Wine <br> 1000,- kr", coctails: "Cocktails <br> 1600,- kr", sparklingWine: "Sparkling Wine <br> 1600,- kr"},
         photo: './images/bars/irishman.JPG', //vantar mytnd fyrir jungle
       },
 
@@ -42,7 +42,7 @@ let places =
         address: "Laugavegur 20a, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
-        drinks: {beer: "800-850,- kr", wine: "800,- kr"},
+        drinks: {beer: "Beer <br> 800/850,- kr", wine: " Wine <br> 800,- kr"},
         photo: './images/bars/lebowski.jpg',
       },
 
@@ -53,7 +53,7 @@ let places =
         address: "Austurstræti 20a, 101 Reykjavík",
         happyhours: "16:00-19:00",
         days: "Everyday",
-        drinks: {beer: "850-950,- kr", wine: "950,- kr", coctails: "1700,- kr", shots: "900,- kr"},
+        drinks: {beer: "Beer <br> 850/950,- kr", wine: "Wine <br> 950,- kr", coctails: "Cocktails <br> 1700,- kr", shots: "Shots <br> 900,- kr"},
         photo: './images/bars/english.jpg',
       },      
       {
@@ -63,7 +63,7 @@ let places =
         address: "Laugavegur 20b, 101 Reykjavík",
         happyhours: "16:00-17:00",
         days: "Everyday",
-        drinks: {beer: "900", wine: "900", coctails: "1800"},
+        drinks: {beer: "Beer <br> 900", wine: "Wine <br> 900", coctails: "Cocktails <br> 1800"},
         photo: './images/bars/kaldi.jpg',
       },
       {
@@ -73,7 +73,7 @@ let places =
         address: "Ingólfsstræti 3, 101 Reykjavík",
         happyhours: "16:00-19:00",
         days: "Everyday",
-        drinks: {beer: "2for1", wine: "2for1", Shots: "600", sparklingWine: "1000"},
+        drinks: {beer: "Beer <br> 2for1", wine: "Wine <br> 2for1", Shots: "Shots <br> 600", sparklingWine: "Sparkling Wine <br> 1000"},
         photo: './images/bars/danske.jpg',
       },
 
@@ -84,17 +84,17 @@ let places =
         address: "Ingólfsstræto 1a, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
-        drinks: {beer: "700", wine: "700"},
+        drinks: {beer: "Beer <br> 700", wine: "Wine <br> 700"},
         photo: './images/bars/islenski.jpg',
       },
       {
         id: 9,
         type: "bars",
         bar_name: "Stúdentakjallarinn",
-        address: "Háskóli Íslands, Háskólatorg, 107 Reykjavík",
+        address: "Sæmundargata, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
-        drinks: {beer: "710-850", Cider: "800"},
+        drinks: {beer: "Beer <br> 710-850", Cider: "Cider <br> 800"},
         photo: './images/bars/student.jpg',
       },
       {
@@ -104,7 +104,7 @@ let places =
         address: "Klapparstígur 28, 101 Reykjavík",
         happyhours: "15:00-18:00",
         days: "Everyday",
-        drinks: {beer: "25% off", wine: "25% off", coctails: "25% off"},
+        drinks: {beer: "Beer <br> 25% off", wine: "Wine <br> 25% off", coctails: "Cocktails <br> 25% off"},
         photo: './images/bars/cocktailbar.JPG',
       },
       
@@ -116,7 +116,7 @@ let places =
         address: "Hverfisgata 33, 101 Reykjavík",
         happyhours: "15:00-19:00",
         days: "Everyday",
-        drinks: {beer: "750-890,- kr", wine: "990,- kr", coctails: "1490,- kr", rose: "990,- kr", sparklingWine: "990"},
+        drinks: {beer: "Beer <br> 750-890,- kr", wine: "Wine <br> 990,- kr", coctails: "Cocktails <br> 1490,- kr", rose: "Rose <br> 990,- kr", sparklingWine: "Sparkling Wine <br> 990"},
         photo: './images/bars/miami.jpg',
       },
 
@@ -130,7 +130,7 @@ let places =
         address: "Hafnarstræti 1-3, 101 Reykjavík",
         happyhours: "15:00-18:00",
         days: "Every weekday",
-        drinks: {beer: "990, 1090, 1290,- kr", wine: "1090-1190,- kr", shots: "700-950,- kr"},
+        drinks: {beer: "Beer <br> 990, 1090, 1290,- kr", wine: "Wine <br> 1090-1190,- kr", shots: "Shots <br> 700-950,- kr"},
         photo: './images/restaurants/svin.jpg',
       },
 
@@ -141,7 +141,7 @@ let places =
         address: "Hafnarstræti 1-3, 101 Reykjavík",
         happyhours: "15:00-17:00",
         days: "Everyday",
-        drinks: {beer: "990,- kr", wine: "1190,- kr", coctails: "1690,- kr"},
+        drinks: {beer: "Beer <br> 990,- kr", wine: "Wine <br> 1190,- kr", coctails: "Cocktails <br> 1690,- kr"},
         photo: './images/restaurants/fjallkonan.jpg',
       },
 
@@ -152,7 +152,7 @@ let places =
         address: "Þingholtsstræti 5, 101 Reykjavík",
         happyhours: "17:00-18:00",
         days: "Everyday",
-        drinks: {beer: "50% off", wine: "50% off", coctails: "50% off"},
+        drinks: {beer: "Beer <br> 50% off", wine: "Wine <br> 50% off", coctails: "Cocktails <br> 50% off"},
         photo: './images/restaurants/sushi.JPG',
       },
 
@@ -163,7 +163,7 @@ let places =
         address: "Skólavörðustígur 40, 101 Reykjavík",
         happyhours: "12:00-18:00",
         days: "Everyday",
-        drinks: {beer: "1000,- kr", wine: "1000,- kr", coctails: "1800,- kr"},
+        drinks: {beer: "Beer <br> 1000,- kr", wine: "Wine <br> 1000,- kr", coctails: "Cocktails <br> 1800,- kr"},
         photo: './images/restaurants/kol.jpg',
       },
 
@@ -175,7 +175,7 @@ let places =
         address: "Mýrargata 2, 101 Reykjavík",
         happyhours: "15:00-18:00",
         days: "Everyday",
-        drinks: {beer: "600,- kr", wine: "850,- kr", shots: "600,- kr"},
+        drinks: {beer: "Beer <br> 600,- kr", wine: "Wine <br> 850,- kr", shots: "Shots <br> 600,- kr"},
         photo: './images/restaurants/slippbarinn.jpg',
       },
 
@@ -186,7 +186,7 @@ let places =
         address: "Nýlendugata 14, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
-        drinks: {beer: "850,- kr", wine: "850,- kr"},
+        drinks: {beer: "Beer <br> 850,- kr", wine: "Wine <br> 850,- kr"},
         photo: './images/restaurants/for.jpg',
       },
 
@@ -197,7 +197,7 @@ let places =
         address: "Hverfisgata 10, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
-        drinks: {beer: "890", wine: "990", rose: "950,- kr", coctails: "1750,- kr"},
+        drinks: {beer: "Beer <br> 890", wine: "Wine <br> 990", rose: "Rose <br> 950,- kr", coctails: "Cocktails <br> 1750,- kr"},
         photo: './images/restaurants/punk.jpg',
       },
 
@@ -208,7 +208,7 @@ let places =
         address: "Ingólfsstræti 1, 101 Reykjavík",
         happyhours: "15:00-18:00",
         days: "Everyday",
-        drinks: {beer: "800-850,- kr", wine: "950,- kr"},
+        drinks: {beer: "Beer <br> 800-850,- kr", wine: "Wine <br> 950,- kr"},
         photo: './images/restaurants/sky.jpg',
       },
 
@@ -219,7 +219,7 @@ let places =
         address: "Laugavegur 77",
         happyhours: "15:00-18:00",
         days: "Everyday",
-        drinks: {beer: "900,- kr", wine: "900,- kr"},
+        drinks: {beer: "Beer <br> 900,- kr", wine: "Wine <br> 900,- kr"},
         photo: './images/restaurants/eiriksson.jpg',
       },
 
@@ -234,7 +234,7 @@ let offer =[
       barId: 7,
       day: ["thursday"],
       time: "allday",
-      offer: {coctails: "1600,- kr"}
+      offer: {coctails: "Cocktails <br> 1600,- kr"}
   },
 
   {
@@ -242,7 +242,7 @@ let offer =[
       barId: 15,
       day: ["wednesday"],
       time: "15:00-19:00",
-      offer: {coctails: "Mojito 1000,- kr"}
+      offer: {coctails: "Mojito <br> 1000,- kr"}
   },
 
   {
@@ -250,7 +250,7 @@ let offer =[
       barId: 15,
       day: ["thursday"],
       time: "15:00-19:00",
-      offer: {coctails: "Gin'n Tonic 1490,- kr"}
+      offer: {coctails: "Gin'n Tonic <br> 1490,- kr"}
   },
 
  /*{
@@ -278,7 +278,7 @@ let offer =[
       barId: 2,
       day: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
       time: "16:00-19:00",
-      offer: {coctails: "2f1 Moscow Mule, 2f1 Aperol Spritz"}
+      offer: {coctails: "2f1 Moscow Mule <br> 2f1 Aperol Spritz"}
   },
 
 ] 

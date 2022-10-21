@@ -1,258 +1,177 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
+
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="sign-in.css">
     <link rel="stylesheet" href="contact-us.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="array" href="array.js">
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
 
-    <meta name="author" content="Tipsy">
+    <!-- FontAwesome Import Drinks Icons-->
+    <script src="https://kit.fontawesome.com/395e0368d4.js" crossorigin="anonymous"></script>
 
-    <!-- Font awesome (*hamborgari* (var skráð sem peace merkið) ) -->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    
-    <!-- Font awesome (*hamborgari* (var skráð sem youtube merkið))
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-
-    <!-- Font import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-
-
-    <!--Favicon import-->
-    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
-    <link rel="manifest" href="Favicon/site.webmanifest">
-
-    <!--Font Awesome-->
-    <link rel="heart-empty" href="">
-    <i class="fa-light fa-heart"></i>-
-
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipsy</title>
-
-
     
 </head>
+
 <body>  
+
+    
+    <!-- Nav-menubar and hamburger -->
+    <nav>
+        <div id="main-logo"><img class="logoimg" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()"></div>
+        <!-- Here I have 2 classes with in the same class in a div. Doing so by adding a blank space between them -->
+        <div class="navbar-container container">
+            <input type="checkbox" onclick="toggleMenu()">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div> 
+        </div>
+        <!-- Links for menubar -->
+        <div id="menu"> 
+            <button class="menu-item" onclick="showSpecialDealsPage()">Special Deals</button>        
+            <button class="menu-item" onclick="showFavouritesPage()">Favourites</button>
+            <button class="menu-item" onclick="showContactUsPage()">Contact Us</button>
+            <button class="menu-item" onclick="showSignInPage()">Sign In</button>
+        </div>
+    </nav>
+
 
     <!-- Intro screen -->
     <div class="intro">
-        <h5 class="logo-header">
+        <h1 class="logo-header">
             <span class="logo"><img src="images/Tipsy_logo.png" alt="logo"></span>
-        </h5>
+        </h1>
     </div>
 
-    <!--div fyrir pages-->
-    <div id="special-deals"></div>
+    <!-- Div for favourites page -->
     <div id="favourites"></div>
-    <div id="contact-us"></div>
-    <div id="sign-in"></div>
 
-    <!--Homepage (happy hour)-->
 
     <main id="main-section">
 
-          <img id="main-logo" src="images/Tipsy_logo.png" alt="logo" onclick="showHomePage()">
-            <h2 id="happy">HAPPY HOUR</h2>
-            
-            <p id="now">HAPPENING NOW</p>
-            
 
-
-        <!-- Homepage shows whats happening right now -->
-        <div id="home" class="home">
-           <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
-          
-            <div class="bar/res-btn">
+        <!-- Homepage (happy hour) -->
+        <h1 id="happytext">HAPPY HOUR</h1>
+        <p id="now">HAPPENING NOW</p>
+            <div class="placetypebutton">
                 <!--Bars-Restaurants buttons-->
-                <a class="my-button1" title="Relevant Title" href="#">Bars</a>
-                <a class="my-button2" title="Relevant Title" href="#">Restaurants</a>
-                
+                <a class="my-button1" title="Bars button" href="#" onclick="showBars()">BARS</a>
+                <a class="my-button2" title="Restaurant button" href="#"onclick="showRestaurants()">RESTAURANTS</a>  
             </div>
-                 
-        </div>
-
-    <!--About page-->
-        <div id="about">
-        </div>
+        <div id="home" class="home"></div>
     
-    <!--Special Deals page-->
+
+        <!-- Special Deals page -->
         <div id="special-deals">
-            <div class="home">
-            
-               <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo">-->
-            </div>
-            <div class="section">
-            <h2>Special Deals</h2>
-            <p>2f1</p>
-            
-            <h2>About us</h2>
-            <img id="author-image" src="images/istockphoto-1262018343-612x612.jpg" alt="Image of the author">
-            <p>
-                Hi there! My <span class="emphasis">name</span> is <span class="emphasis">Gabríel Bergmann</span> and I am an aspiring software developer at the <span class="emphasis">age</span> of <span class="emphasis">31</span> that's studying at Tækniskólinn in Iceland.
-            </p>
-            
+            <div class="home"></div>
+            <h2 id="special-deals-page">Special Deals</h2>
         </div>
-        </div>
+        <!-- <button id="when">when</button> -->
 
-    <!-- Contact Us page -->
-    <div id="contact-us" class="title">
-        <h2>Contact Us</h2>
-        <p>Is there anything we can do better?<br> 
-            Please let us know</p>
-    </div>
-    <form class="form-contact" action="">
-        <div class="half">
-            <div class="item">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-               
-            </div>
-            <div class="item">
-                <label for="email">e-mail</label>
-                <input type="text" id="email">
 
+        <!-- Contact Us page -->
+        <div id="contact-us" class="title">
+            <h2>Contact Us</h2>
+            <p>Is there anything we can do better?<br> 
+                Please let us know</p>
+        </div>
+        <form class="form-contact" action="">
+            <div class="half">
+                <div class="item">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="item">
+                    <label for="email">e-mail</label>
+                    <input type="text" id="email">
+                </div>
             </div>
-        </div>
-        <div class="full">
-            <label for="message">Message</label>
-            <textarea name="" id="message"></textarea>
-
-        </div>
-        <div class="action">
-            <input type="submit" class="btn" onclick="openPopup()" value="Submit" >
-            <div class="popup" id="popup">
-                <h2>Thank You!</h2>
-                <p>Your message was sent</p>
-                <button type="button" onclick="closePopup()">OK</button>
+            <div class="full">
+                <label for="message">Message</label>
+                <textarea name="" id="message"></textarea>
             </div>
-        </div>
-        <div class="text">
-            <p>We will get back to you<br>as soon as possible!</p>
-        </div>
-        
-    </form>
+            <div class="action">
+                <input type="submit" class="btn" onclick="openPopup()" value="Submit" >
+                <div class="popup" id="popup">
+                    <h2>Thank You!</h2>
+                    <p>Your message was sent</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+            <div class="text">
+                <p>We will get back to you<br>as soon as possible!</p>
+            </div>
+        </form>
 
-    <!-- Bar page -->
+
+        <!-- Bar page -->
         <div id="bars">
-            <div class="home">
-                
-              <!--  <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
-            
+            <!-- <button id="when">when</button> --> 
+            <div class="home"></div>
+                <div id="bars-container"></div>
             </div>
-            <div class="section">
-            <h2 id="place1">Bars in Reykjavík</h2>
-            <button id="when">when</button>
-            <div id="bars-container"></div>
-        </div>
         </div>
     
 
-    <!-- Restaurant page -->
+        <!-- Restaurant page -->
         <div id="restaurants">
-            <div class="home">
-            
-               <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
-            </div>
-            <div class="section">
-                
-            <h2 id="place2">Restaurants in Reykjavík</h2>
-            <button id="when">when</button>
-            <div id="restaurants-container">
-
-        </div>
-
-        <div id="specialdeals">
-            <div class="home">
-            
-               <!-- <img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
-            </div>
-            <div class="section">
-                
-            <h2 id="place2">Special Deals</h2>
-            <button id="when">when</button>
-            <div id="specialdeals-container">
-
+            <!-- <button id="when">when</button> -->
+            <div class="home"></div>  
+            <div id="restaurants-container"></div>
         </div>
 
 
-    <!--Sign in page-->
+        <!--Sign in page-->
         <div id="sign-in">
-
-            <div class="home">
-            
-                <!--<img id="main-logo" src="images/Tipsy_logo.png" alt="logo"> -->
-            </div>
+            <div class="home"></div>
             <div class="section">
-
-            <h2>Sign-up</h2>
-        
+            <h2>Sign-up</h2> 
             <h1>Sign In</h1>
             <h4>Sign in to get the best deals!</h4>
-            
             <div class="signin-box">
                 <form class="form-sign-in" id="form">
                     <div class="signin-box">
-        
                         <label for="username">Username</label>
                         <i class="fas fa-user"></i>
-        
-                        <input 
-                            type="text" 
-                            name="username"
-                            id="username"
-                            placeholder=""
-                        />
+                        <input type="text" name="username" id="username" placeholder=""/>
                         <i class="fas fa-exclamation-circle failure-icon"></i>
                         <i class="far fa-check-circle success-icon"></i>
                         <div class="error"></div>
                     </div>
-        
                     <div>
                         <label for="password">Password</label>
                         <i class="fas fa-lock"></i>
-        
-                        <input 
-                            type="password" 
-                            name="password"
-                            id="password"
-                            placeholder=""
-                        />
+                        <input type="password" name="password" id="password" placeholder=""/>
                         <i class="fas fa-exclamation-circle failure-icon"></i>
                         <i class="far fa-check-circle success-icon"></i>
                         <div class="error"></div>
                     </div>
-        
                     <div id="testing">
                         <p>Forgot password?</p>
                     </div>
                     <!--<input type="button" value="Sign In">-->
                     <button id="btn" type="submit">Sign In</button>
                     <div id="testingTwo">
-                    <p>Not a member? <div id="signUp">Sign up</div></p>
+                        <p> Not a member? <div id="signUp">Sign up</div></p>
                     </div>
                 </form>
             </div>
-
             <div id="sign-up-container">
-
-            <h2>Sign In</h2>
-            <div id="sign-in-container">
-                
+                <h2>Sign In</h2>
+                <div id="sign-in-container"></div>
             </div>
-
             </div>
-            
-    
         </div>
 
         
+<<<<<<< HEAD
            <!--Sign up page-->
         <div class="sign-up">
             <div class="section">
@@ -308,20 +227,12 @@
 
 
 
+=======
+>>>>>>> 5c8c05f5be530196e742c89434a34a085a978d88
     </main>
-    
-    
-    <!-- menubar and hamburger -->
-    
-    <button  id="menu-button" class="fa fa-bars fa-4x"onclick="toggleMenu()" ></button>
-    <div id="menu">
-        <button class="menu-item" onclick="showSpecialDealsPage()">Special Deals</button>        
-        <button class="menu-item" onclick="showFavouritesPage()">Favourites</button>
-        <button class="menu-item" onclick="showContactUsPage()">Contact Us</button>
-        <button class="menu-item" onclick="showSignInPage()">Sign In</button>
-    </div>
 
 
+    <script src="functions.js"></script>
     <script src="main.js"></script>
     <script src="array.js"></script>
     <script src= "arrayfunctions.js"></script>
@@ -329,10 +240,7 @@
     <script src="mainsi.js"></script>
     <script src="popup.js"></script>
 
-    <script type="text/javascript">
-        document.getElementById('intro').style['display'] = 'none';
-    </script>
-
     
 </body>
+
 </html>

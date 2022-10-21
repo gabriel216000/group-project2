@@ -82,28 +82,8 @@ offer.forEach(element => {
                         ${element.time}
                     </p>
                 </div>
-                <div class="fa arrow-down">
-                    <i class="fa-solid fa-chevron-down"></i>
-               </div>
-               
-                <div class"card-expand" id="expand"> 
-                    <p class="drinks-list">
-                        ${element.drinks.beer?beersvg+element.drinks.beer:""} <br>
-                        ${element.drinks.wine?winesvg+element.drinks.wine:""}
-                        ${element.drinks.coctails?cocktailsvg+element.drinks.coctails:""}
-                        ${element.drinks.sparklingWine?sparklingwinesvg+element.drinks.sparklingWine:""}
-                        ${element.drinks.rose?rosesvg+element.drinks.rose:""}
-                        ${element.drinks.shots?shotssvg+element.drinks.shots:""}
-                    </p>
-                <div class="fa arrow-up">
-                    <i class="fa-solid fa-chevron-up"></i>
-                </div>
-                </div>
             </div>
         </div>
     `
 });
 
-function expand(card) {
-    card.classList.toggle('card-expanded');
-}

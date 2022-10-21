@@ -367,7 +367,18 @@ h2 {
     right: 8px;
 }
 
+/* For icons in expanded card */
 .w3-display-container svg {
     height: 40px;
 }
   
+.card-expanded {
+    height: 100%;
+}
+
+.drinks-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 0.5rem;
+}

@@ -11,7 +11,7 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    background-color: black;
+    background-color: rgba(32, 32, 32, 1);
     color: white;
 }
 
@@ -149,7 +149,6 @@ body {
 }
 
 #bars-container {
-    
     color: black; 
     display: flex;
     flex-direction: row; 
@@ -214,7 +213,6 @@ body {
     padding-bottom: 20px;
     width: 320px;
     color: white;
-    
 }
 
 /*Inside of cards*/
@@ -290,7 +288,6 @@ body {
 
 .weekdays {
     background-color:#927abc;
-   
 }
 
 /*Clock inside cards*/

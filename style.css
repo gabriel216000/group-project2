@@ -176,7 +176,7 @@ body {
     height: auto;
 }
 
-.w3-display-container svg {
+.w3-display-container .svg {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -359,11 +359,15 @@ h2 {
     height: auto;
 }
   
-.w3-display-container svg {
+.w3-display-container .svg {
     position: absolute;
     width: 30px;
     height: 30px;
     top: 8px;
     right: 8px;
+}
+
+.w3-display-container svg {
+    height: 40px;
 }
   

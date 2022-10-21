@@ -1,5 +1,5 @@
-//List of all resturants and bars we have on the website
-//The bars and resturants each have a type - either bar or resturant so we can sort them 
+// List of all resturants and bars we have on the website
+// The bars and resturants each have a type - either bar or resturant so we can sort them 
 let places =
 [
     {
@@ -55,7 +55,8 @@ let places =
         days: "everyday",
         drinks: {beer: "850-950,- kr", wine: "950,- kr", coctails: "1700,- kr", shots: "900,- kr"},
         photo: './images/bars/english.jpg',
-      },      
+      }, 
+
       {
         id: 6,
         type: "bars",
@@ -66,6 +67,7 @@ let places =
         drinks: {beer: "900", wine: "900", coctails: "1800"},
         photo: './images/bars/kaldi.jpg',
       },
+
       {
         id: 7,
         type: "bars",
@@ -87,16 +89,18 @@ let places =
         drinks: {beer: "700", wine: "700"},
         photo: './images/bars/islenski.jpg',
       },
+
       {
         id: 9,
         type: "bars",
         bar_name: "Stúdentakjallarinn",
-        address: "Háskóli Íslands, Háskólatorg, 107 Reykjavík",
+        address: "Sæmundargata, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "everyday",
         drinks: {beer: "710-850", Cider: "800"},
         photo: './images/bars/student.jpg',
       },
+
       {
         id: 10,
         type: "bars",
@@ -108,7 +112,6 @@ let places =
         photo: './images/bars/cocktailbar.JPG',
       },
       
-      
       {
         id: 11,
         type: "bars",
@@ -119,9 +122,6 @@ let places =
         drinks: {beer: "750-890,- kr", wine: "990,- kr", coctails: "1490,- kr", rose: "990,- kr", sparklingWine: "990"},
         photo: './images/bars/miami.jpg',
       },
-
-
-
 
       {
         id: 12,
@@ -166,7 +166,6 @@ let places =
         drinks: {beer: "1000,- kr", wine: "1000,- kr", coctails: "1800,- kr"},
         photo: './images/restaurants/kol.jpg',
       },
-
 
       {
         id: 16,
@@ -222,13 +221,10 @@ let places =
         drinks: {beer: "900,- kr", wine: "900,- kr"},
         photo: './images/restaurants/eiriksson.jpg',
       },
-
-
 ]
 
-//Array for places with special deals
+// Array for places with special deals
 let offer =[
-
   {
       id: 1,
       barId: 7,
@@ -253,7 +249,6 @@ let offer =[
       offer: {coctails: "Gin'n Tonic 1490,- kr"}
   },
 
-
   {
       id: 5,
       barId: 10,
@@ -269,6 +264,4 @@ let offer =[
       time: "16:00-19:00",
       offer: {coctails: "2f1 Moscow Mule, 2f1 Aperol Spritz"}
   },
-
 ] 
-

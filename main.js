@@ -46,7 +46,7 @@ let currentPage = home;
 let isMenuShowing=false;
 
 function toggleMenu() {
-    if (isMenuShowing)
+    if( isMenuShowing )
         closeMenu();
     else 
         openMenu();
@@ -99,8 +99,8 @@ function showRestaurants() {
 
 /*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 
 function changePage(newPage) {
-    console.log(newPage)
-    if ( currentPage !==newPage ) {
+    document.querySelector('.navbar-container input[type="checkbox"]').checked = false
+    if( currentPage !==newPage ) {
         currentPage.style.display = "none";
         if (newPage.id==="home") {
             newPage.style.display = "flex";
@@ -108,23 +108,20 @@ function changePage(newPage) {
         else {
             newPage.style.display = "block";
         }
-
         currentPage = newPage;    
     }
     closeMenu();
-
     sessionStorage.setItem("pageID", currentPage.id)
 }
-
 
 /*refreshar síðu og þú ert ennþá inná sömu síðu en kastar þér ekki á homepage*/ 
 handleRefresh()
 
 function handleRefresh() {
     const prevPageID = sessionStorage.getItem("pageID");
-    if(prevPageID) {
+    if( prevPageID ) {
         [].forEach(section =>{
-            if(section.id === prevPageID)
+            if( section.id === prevPageID )
                 changePage(section);
         });
     }

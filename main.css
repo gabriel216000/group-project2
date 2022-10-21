@@ -37,7 +37,6 @@
   opacity: 0;
 }
 
-/*live coding start*/
 /*glugginn opnast og lokast*/
 /*hvað gerir tilda merkið? hvað gerir :checked? segja afh .hamburgerlines .line1*/
 .navbar-container input[type=checkbox]:checked ~ .menu-items {
@@ -56,7 +55,6 @@
   transform: rotate(-35deg);
 }
 
-/*næsta*/
 .navbar-container .hamburger-lines .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;

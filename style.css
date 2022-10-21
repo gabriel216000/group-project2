@@ -218,7 +218,7 @@ body {
 /*Inside of cards*/
 .w3-display-container {
     padding: 0px 0px 10px 0px;
-    border-radius: 0px 0px 8px 8px; 
+    border-radius: 8px 8px 8px 8px; 
     background-color: #363636;
     margin: 10px;
 }
@@ -234,6 +234,8 @@ body {
     flex-direction: row; 
     flex-flow: row wrap; 
     margin-left: 15px;
+    justify-content: center;
+    
 }
 
 /*card*/
@@ -260,7 +262,7 @@ body {
     flex-flow: row wrap;  
 }
 
-/*  Stafirnir fyrir vikuna á hverju cardi  */
+/*  WEEKDAYS  */
 /*Div yfir alla stafina*/
 .week {
     display: flex;
@@ -284,6 +286,7 @@ body {
     line-height: 23px;
     vertical-align: middle;
     font-weight: 600;
+    
 }
 
 .weekdays {

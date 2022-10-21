@@ -86,3 +86,7 @@ offer.forEach(element => {
         </div>
     `
 });
+
+function expand(card) {
+    card.classList.toggle('card-expanded');
+}

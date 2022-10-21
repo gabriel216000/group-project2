@@ -25,22 +25,22 @@ body {
     height: 100vh;
     background-image: linear-gradient(to top, purple,  orange);
     transition: 1s;
+    display: none;
 }
 
 .logo-header {
-    position: absolute;
-    top: 50%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+    
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     display: inline-block;
     bottom: -20px;
     opacity: 0;
-    color: black;
 }
 
 .logo.active {

@@ -7,7 +7,11 @@ let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
 let logoSpan = document.querySelectorAll(".logo");
 
-window.addEventListener("DOMContentLoaded", ()=>{
+const visited = localStorage.getItem('visited');
+
+if (!visited) {
+    intro.style.display = "block";
+    window.addEventListener("DOMContentLoaded", ()=>{
     setTimeout(()=>{
         logoSpan.forEach((span, idx)=>{
             setTimeout(()=>{
@@ -27,6 +31,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }, 2300)
     })
 })
+
+ localStorage.setItem('visited', 1);
+ 
+} 
 /* intro end*/
 
 /*hamburger menu, open-close*/ 

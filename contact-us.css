@@ -123,12 +123,11 @@
     opacity: 0.8;
     transition: 0.3s;
     background: #fe90fe;
-  }
+}
 
 .form-contact .half .item input:hover, .form-contact .full textarea:hover {
     background: #cfcece;
     transition: 0.3s;
-
 }
 
 .text p {
@@ -156,7 +155,6 @@
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-
 }
 
 .popup h2 {
@@ -207,5 +205,4 @@
         text-align: right;
 
     }
-
 }

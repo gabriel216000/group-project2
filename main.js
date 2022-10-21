@@ -7,7 +7,11 @@ let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
 let logoSpan = document.querySelectorAll(".logo");
 
-window.addEventListener("DOMContentLoaded", ()=>{
+const visited = localStorage.getItem('visited');
+
+if (!visited) {
+    intro.style.display = "block";
+    window.addEventListener("DOMContentLoaded", ()=>{
     setTimeout(()=>{
         logoSpan.forEach((span, idx)=>{
             setTimeout(()=>{
@@ -27,6 +31,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }, 2300)
     })
 })
+
+ localStorage.setItem('visited', 1);
+ 
+} 
 /* intro end*/
 
 /*hamburger menu, open-close*/ 
@@ -92,13 +100,19 @@ function showHomePage() {
 }
 function showBars() {
     changePage(bars);
+    document.getElementById("happytext").innerText ="BARS"
+    document.getElementById("now").style.color = "rgba(32, 32, 32, 1)"
 }
 function showRestaurants() {
     changePage(restaurants);
+    document.getElementById("happytext").innerText ="RESTAURANTS"
+    document.getElementById("now").style.color = "rgba(32, 32, 32, 1)"
 }
 
 /*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 
 function changePage(newPage) {
+    document.getElementById("happytext").innerText ="HAPPY HOUR"
+    document.getElementById("now").style.color = "rgb(180, 155, 155)"
     document.querySelector('.navbar-container input[type="checkbox"]').checked = false
     if( currentPage !==newPage ) {
         currentPage.style.display = "none";
@@ -126,3 +140,4 @@ function handleRefresh() {
         });
     }
 }
+

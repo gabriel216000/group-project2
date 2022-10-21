@@ -72,14 +72,14 @@ offer.forEach(element => {
                 <p>
                     ${bar?.address}
                 </p>
-                <div class="week">
-                    <p>
-                        ${offerday}
-                    </p>
-                </div>
                 <div class="clock">
                     <p>
                         ${element.time}
+                    </p>
+                </div>
+                <div class="week">
+                    <p>
+                        ${offerday}
                     </p>
                 </div>
             </div>

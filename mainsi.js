@@ -1,22 +1,21 @@
-
 let id = (id) => document.getElementById(id);
 
 let classes = (classes) => document.getElementsByClassName(classes);
 
-let username = id("username"),
-  password = id("password"),
+let username = id("username1"),
+  password = id("password1"),
   form = id("form"),
   
   errorMsg = classes("error"),
   successIcon = classes("success-icon"),
   failureIcon = classes("failure-icon");
 
-form.addEventListener("submit", (e) => {
+/*form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     engine(username, 0, "Please type username");
     engine(password, 1, "Please type password");
-});
+});*/
 
 
 let engine = (id, serial, message) => {

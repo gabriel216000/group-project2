@@ -5,9 +5,6 @@
 
 body {
     font-family: 'poppins', sans-serif;
-    /*
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/bar.png");
-    */
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -61,12 +58,6 @@ body {
     color: white;
     margin-right: 1rem;
 }
-
-/*#when {
-    color: white;
-    padding-bottom: 10px;
-    margin-left: 265px;
-}*/
 
 #now {
     margin-top: 20px;
@@ -192,6 +183,7 @@ body {
     margin-bottom: -4px;
     border-radius: 8px 8px 0px 0px; 
 }
+
 /*Text inside cards - Name of place*/
 .w3-display-container h1 {
     margin-bottom: 10px;
@@ -206,7 +198,6 @@ body {
     letter-spacing: 4%;
     margin-bottom: 20px;
 }
-
 
 /*One is what's inside of the cards; Text*/
 .one {
@@ -234,8 +225,7 @@ body {
     flex-direction: row; 
     flex-flow: row wrap; 
     margin-left: 15px;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 /*card*/
@@ -286,7 +276,6 @@ body {
     line-height: 23px;
     vertical-align: middle;
     font-weight: 600;
-    
 }
 
 .weekdays {

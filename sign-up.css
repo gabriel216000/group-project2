@@ -1,4 +1,4 @@
-.form2{
+.form2 {
     width: 320px;
     margin-top: 40px;
     padding-top: 20px;
@@ -9,14 +9,14 @@
     padding: 50px;
 }
 
-.form2 label{
+.form2 label {
     display: flex;
     margin-top: 20px;
     font-size: 16px;
     color: white;
 }
 
-.form2 input{
+.form2 input {
     background-color: #f2f2f2;
     width: 100%;
     height: 50px;
@@ -28,7 +28,7 @@
     margin-bottom: 30px;
 }
 
-.btn1{
+.btn1 {
     width: 100%;
     height: 50px;
     border: none;
@@ -42,17 +42,17 @@
     font-size: 24px;
 }
 
-.btn1:hover{
+.btn1:hover {
     opacity: 0.8;
     transition: 0.5s;
     background: #fa90fa;
-  }
+}
 
 .error {
     font-size: 14.5px;
     margin-top: 5px;
     color: red;
-  }
+}
 
 .text- {
     text-align: right;

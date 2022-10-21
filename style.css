@@ -30,7 +30,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%
-    
 }
 
 .logo {
@@ -336,26 +335,6 @@ h2 {
 .my-button1:hover, .my-button2:hover {
     background: #927abc;
     color: black;
-}
-
-.w3-display-container {
-    position: relative;
-    display: inline-block; /* <= shrinks container to image size */
-    transition: transform 150ms ease-in-out;
-}
-  
-.w3-display-container img { /* for responsiveness */
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-  
-.w3-display-container .svg {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 8px;
-    right: 8px;
 }
 
 /* For icons in expanded card */

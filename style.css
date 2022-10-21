@@ -213,13 +213,12 @@ body {
 .one {
     padding-bottom: 20px;
     width: 320px;
-    
     color: white;
 }
 
 /*Inside of cards*/
 .w3-display-container {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
     border-radius: 0px 0px 8px 8px; 
     background-color: #363636;
     margin: 10px;
@@ -370,8 +369,9 @@ h2 {
 }
 
 /* For icons in expanded card */
-.w3-display-container svg {
+.drinks-icon {
     height: 40px;
+    color: white;
 }
   
 /* Expanded card */
@@ -386,6 +386,7 @@ h2 {
 /* Styles for drinks list */
 .drinks-list {
     margin-top: 40px;
+    margin-left: 20px;
     display: grid;
     grid-template-columns: 20% 80%;
     gap: 0.5rem;
@@ -395,4 +396,5 @@ h2 {
 .arrow-down, .arrow-up {
     float: right;
     margin-right: 20px;
+    font-weight: bolder;
 }

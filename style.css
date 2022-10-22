@@ -187,7 +187,7 @@ body {
 /*One is what's inside of the cards; Text*/
 .one {
     padding-bottom: 20px;
-    width: 320px;
+    width: 370px;
     color: white;
 }
 
@@ -200,8 +200,6 @@ body {
     height: 390px;
     overflow: hidden;
     transition: height 500ms;
-   /* width: 450px;
-    margin-left: 50px;*/
 }
 
 .w3-display-container h1, p {
@@ -216,8 +214,6 @@ body {
     flex-flow: row wrap; 
     margin-left: 15px;
     justify-content: center;
-    /*justify-content: space-between;   
-    width: 75%;*/
 }
 
 /*card*/
@@ -225,7 +221,8 @@ body {
     color: black; 
     display: flex;
     flex-direction: row; 
-    flex-flow: row wrap;  
+    flex-flow: row wrap; 
+    justify-content: center; 
     /*justify-content: space-between;   
     width: 75%;*/
 
@@ -237,6 +234,7 @@ body {
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap; 
+    justify-content: center;
    /* justify-content: space-between; 
     width: 75%;  */
 
@@ -255,7 +253,7 @@ body {
 .week {
     display: flex;
     flex-direction: row;
-   /* margin-left: 15px; */
+    margin-left: 12px; 
 }
 
 /* Div fyrir hvern og einn staf fyrir sig */
@@ -275,7 +273,6 @@ body {
     line-height: 23px;
     vertical-align: middle;
     font-weight: 600;
-    /*padding-top: 10px;*/
 }
 
 .weekdays {
@@ -289,7 +286,7 @@ body {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 13px;
-    margin-left: 3px;
+    margin-left: 0px;
 }
 
 .placetypebutton {

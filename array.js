@@ -81,7 +81,7 @@ let places =
         id: 8,
         type: "bars",
         bar_name: "Íslenski Barinn",
-        address: "Ingólfsstræto 1a, 101 Reykjavík",
+        address: "Ingólfsstræti 1a, 101 Reykjavík",
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 700", wine: "Wine <br> 700"},

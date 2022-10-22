@@ -29,8 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%
-    
+    height: 100%;
 }
 
 .logo {
@@ -98,7 +97,7 @@ body {
 #clock {
     color: #b042ff;
     font-weight: bold;
-}
+} /* Check if this is connected to anything */
 
 #bars-page, #restaurants-page, #special-deals-page {
     margin: 40px 0 20px 60px;
@@ -137,20 +136,6 @@ body {
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
-}
-
-#bars-container {
-    color: black; 
-    display: flex;
-    flex-direction: row; 
-    flex-flow: row wrap;  
-}
-
-#restaurants-container {
-    color: black; 
-    display: flex;
-    flex-direction: row; 
-    flex-flow: row wrap; 
 }
 
 /* The hearts, start */
@@ -214,6 +199,8 @@ body {
     margin: 10px;
     height: 390px;
     overflow: hidden;
+   /* width: 450px;
+    margin-left: 50px;*/
 }
 
 .w3-display-container h1, p {
@@ -227,7 +214,9 @@ body {
     flex-direction: row; 
     flex-flow: row wrap; 
     margin-left: 15px;
-    justify-content: center;   
+    justify-content: center;
+    /*justify-content: space-between;   
+    width: 75%;*/
 }
 
 /*card*/
@@ -236,6 +225,9 @@ body {
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap;  
+    /*justify-content: space-between;   
+    width: 75%;*/
+
 }
 
 /*card*/
@@ -244,6 +236,9 @@ body {
     display: flex;
     flex-direction: row; 
     flex-flow: row wrap; 
+   /* justify-content: space-between; 
+    width: 75%;  */
+
 }
 
 /*card*/
@@ -259,6 +254,7 @@ body {
 .week {
     display: flex;
     flex-direction: row;
+   /* margin-left: 15px; */
 }
 
 /* Div fyrir hvern og einn staf fyrir sig */
@@ -278,6 +274,7 @@ body {
     line-height: 23px;
     vertical-align: middle;
     font-weight: 600;
+    /*padding-top: 10px;*/
 }
 
 .weekdays {
@@ -292,12 +289,6 @@ body {
     margin-top: 10px;
     margin-bottom: 13px;
     margin-left: 3px;
-}
-
-h2 {
-    font-size: 2rem;
-    padding-bottom: 28px;
-    color: white;
 }
 
 .placetypebutton {
@@ -336,26 +327,6 @@ h2 {
 .my-button1:hover, .my-button2:hover {
     background: #927abc;
     color: black;
-}
-
-.w3-display-container {
-    position: relative;
-    display: inline-block; /* <= shrinks container to image size */
-    transition: transform 150ms ease-in-out;
-}
-  
-.w3-display-container img { /* for responsiveness */
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-  
-.w3-display-container .svg {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 8px;
-    right: 8px;
 }
 
 /* For icons in expanded card */

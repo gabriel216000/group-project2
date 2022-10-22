@@ -1,83 +1,98 @@
-a.active,a:hover{
-    background: orange;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
+.header1-1{
+    text-align: center;
+    padding-top: 70px;
     color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
-#check{
-    display: none;
-}
-
-h4{
+.header2-1{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 70px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-.form-sign-in {
-    width: 300px;
-    margin-top: 50px;
+.form-{
+    width: 320px;
+    margin-top: 40px;
     padding-top: 20px;
-    box-shadow: #363636;
-    padding-right: 65px;
     border: none;
-    padding: 50px;
-    box-shadow: 1px 1px 5px 5px #555555;
     border-radius: 25px;
     margin: auto;
     background-color: #363636;
+    padding: 50px;
+    margin-bottom: 48px;
 }
 
-.form-sign-in label{
+.form- label{
     display: flex;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
 }
 
-.form-sign-in input{
-    background-color: #a3a2a2;
+.form- input{
+    background-color: #f2f2f2;
     width: 100%;
+    height: 48px;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
     outline: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
+
+.btn-{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #F69CF6;
+    color: black;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    background: #fa90fa;
+  }
 
 .error {
     font-size: 14.5px;
     margin-top: 5px;
     color: red;
-}
+  }
 
-#testing {
-    text-align: left;
-    padding-top: 40px;
-    font-size: 15px;
-    color: white;
-}
-
-#testingTwo {
-    text-align: center;
-    font-size: 15px;
+.thetext {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 100;
     padding-bottom: 20px;
     color: white;
 }
 
-#signUp {
-    color: #BE9CF7;
+.thetext2 {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#signup {
+    color: white;
+    text-decoration: underline;
 }
 
 label {
@@ -85,15 +100,32 @@ label {
     margin-bottom: 5px;
 }
 
-.form-sign-in div i {
+.form- div i {
     position: absolute;
     padding: 10px;
 }
 
-/* Þetta var að overridea cards*/
-/*h1{
-    text-align: center;
-    padding-top: 70px;
-    color: white;
-    font-size: 40px;
-}*/
+@media only screen and (min-width: 768px) {
+    .form- {
+        width: 600px;
+    }
+
+    .btn- {
+        width: 50%;
+        margin-left: 50%;
+        font-size: 24px;
+
+    }
+
+    .thetext {
+       margin-left: auto;
+       margin-right: 0px;
+       text-align: right;
+    }
+
+    .thetext2 {
+        margin-left: auto;
+        margin-right: 0px;
+        text-align: right;
+     }
+}

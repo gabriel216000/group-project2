@@ -151,7 +151,7 @@ body {
     height: auto;
 }
 
-.w3-display-container .svg {
+.w3-display-container svg {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -199,6 +199,7 @@ body {
     margin: 10px;
     height: 390px;
     overflow: hidden;
+    transition: height 500ms;
    /* width: 450px;
     margin-left: 50px;*/
 }
@@ -332,13 +333,15 @@ body {
 /* For icons in expanded card */
 .drinks-icon {
     height: 40px;
-    color: white;
+    position: absolute;
+    left: 8px;
 }
   
 /* Expanded card */
 .card-expanded {
     height: 100%;
 }
+
 
 .card-expanded .arrow-down {
     display: none;

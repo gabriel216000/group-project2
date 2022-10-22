@@ -137,21 +137,7 @@ body {
     flex-direction: row; 
     flex-flow: row wrap;  
 }
-/* Eyða!
-#bars-container {
-    color: black; 
-    display: flex;
-    flex-direction: row; 
-    flex-flow: row wrap;  
-}
 
-#restaurants-container {
-    color: black; 
-    display: flex;
-    flex-direction: row; 
-    flex-flow: row wrap; 
-}
-*/
 /* The hearts, start */
 .w3-display-container {
     position: relative;
@@ -291,6 +277,8 @@ body {
     margin-top: 10px;
     margin-bottom: 13px;
     margin-left: 3px;
+
+
 }
 /* Eyða!
 h2 {

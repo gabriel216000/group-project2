@@ -199,6 +199,7 @@ body {
     margin: 10px;
     height: 390px;
     overflow: hidden;
+    transition: height 500ms;
    /* width: 450px;
     margin-left: 50px;*/
 }
@@ -340,6 +341,7 @@ body {
 .card-expanded {
     height: 100%;
 }
+
 
 .card-expanded .arrow-down {
     display: none;

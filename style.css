@@ -151,7 +151,7 @@ body {
     height: auto;
 }
 
-.w3-display-container svg {
+.w3-display-container .heart {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -186,7 +186,6 @@ body {
 
 /*One is what's inside of the cards; Text*/
 .one {
-    padding-bottom: 20px;
     width: 370px;
     color: white;
 }
@@ -200,7 +199,6 @@ body {
     height: 390px;
     overflow: hidden;
     transition: height 500ms;
-    
 }
 
 .w3-display-container h1, p {
@@ -331,8 +329,7 @@ body {
 /* For icons in expanded card */
 .drinks-icon {
     height: 40px;
-    position: absolute;
-    left: 8px;
+    position: relative;
 }
   
 /* Expanded card */
@@ -355,8 +352,13 @@ body {
     align-items: center;
 }
 
-.arrow-down, .arrow-up {
+.arrow-up {
     float: right;
     margin-right: 20px;
-    font-weight: bolder;
+}
+
+.arrow-down {
+    float: right;
+    margin-top: 20px;
+    margin-left: 30px;
 }

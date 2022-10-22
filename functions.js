@@ -37,10 +37,10 @@ const getPlacesHTML = function(places,container){
                         <div class="happyday">F</div>
                         <div class="happyday ${element.days}">S</div>
                         <div class="happyday ${element.days}">S</div>
+                        <div class="fa arrow-down">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                     </div> 
-                    <div class="fa arrow-down">
-                    <i class="fa-solid fa-chevron-down"></i>
-               </div>
                 <div class"card-expand" id="expand"> 
                     <p class="drinks-list">
                         ${element.drinks.beer?beersvg+element.drinks.beer:""} <br>

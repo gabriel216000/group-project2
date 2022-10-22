@@ -200,6 +200,7 @@ body {
     height: 390px;
     overflow: hidden;
     transition: height 500ms;
+    
 }
 
 .w3-display-container h1, p {

@@ -73,3 +73,7 @@ function expand(card) {
     card.classList.toggle('card-expanded');
 }
 
+// To make the card close when scrolling by (WIP)
+/* window.addEventListener("scroll", (card) => {
+    ;
+}); */

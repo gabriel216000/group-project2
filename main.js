@@ -84,35 +84,38 @@ function closeMenu() {
 /*hamburger menu, hver síða fyrir sig*/ 
 function showSpecialDealsPage() {
     changePage(specialDeals);
+    document.getElementById("happytext").innerText ="SPECIAL DEALS"
+    document.getElementById("now").style.color = "rgba(32, 32, 32, 1)"
 }
 function showFavouritesPage() {
     changePage(favourites);
 }
 function showContactUsPage() {
-
     changePage(contactUs);
+    document.getElementById("happytext").innerText ="CONTACT US"
+    document.getElementById("now").innerText ="IS THERE ANYTHING WE CAN DO BETTER? \n\ PLEASE LET US KNOW"
 }
 function showSignInPage() {
     changePage(signIn);
+    document.getElementById("happytext").innerText ="Sign In"
+    document.getElementById("now").innerText ="Welcome back!"
 }
 function showHomePage() {
     changePage(home);
 }
 function showBars() {
-    changePage(bars);
     document.getElementById("happytext").innerText ="BARS"
-    document.getElementById("now").style.color = "rgba(32, 32, 32, 1)"
+    document.getElementById("now").style.visibility ="hidden"
 }
 function showRestaurants() {
-    changePage(restaurants);
     document.getElementById("happytext").innerText ="RESTAURANTS"
-    document.getElementById("now").style.color = "rgba(32, 32, 32, 1)"
+    document.getElementById("now").style.visibility ="hidden"
 }
 
 /*hamburger menu, þegar þú opnar nýja síðu þá fer dropdown menuið*/ 
 function changePage(newPage) {
     document.getElementById("happytext").innerText ="HAPPY HOUR"
-    document.getElementById("now").style.color = "rgb(180, 155, 155)"
+    document.getElementById("now").style.visibility ="visible"
     document.querySelector('.navbar-container input[type="checkbox"]').checked = false
     if( currentPage !==newPage ) {
         currentPage.style.display = "none";

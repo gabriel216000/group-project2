@@ -1,7 +1,7 @@
 let nowlist = document.getElementById("home");
 
-// I used html code to get how the info appears on home, bars, resturants and special deals
-// This is for places that's in the home page and shows whats happening now
+
+// This is for places that are in the home page and shows whats happening now
 
 //The clickable heart
 const like=(svgdiv)=>{
@@ -16,32 +16,26 @@ const like=(svgdiv)=>{
     }
 }
 
-//I call to the function in functions.js
+
+
+
+//I call to this function in functions.js
 getPlacesHTML(places, nowlist)
 
 //Here I put a filter for the bar, now this page only shows the bars
 // I end this code by calling on the function 
 let barlist = document.getElementById("bars-container");
-
 const barsarray=places.filter (place=>place.type === "bars" )
 getPlacesHTML(barsarray, barlist)
 
 //This filter only shows the places with the type name restaurant
 //I end this code by calling on the function 
-
 let restaurantlist = document.getElementById("restaurants-container");
-
-
-const restaurantarray=places.filter (place=>place.type === "restaurants" ) //arrow function
-
+const restaurantarray=places.filter (place=>place.type === "restaurants") 
 getPlacesHTML(restaurantarray, restaurantlist)
 
 
-
-
-
 //This only shows the special deals page
-
 let offerlist = document.getElementById("special-deals").querySelector(".home");
 
 offer.forEach(element => {
@@ -56,10 +50,8 @@ offer.forEach(element => {
         if (element.day.includes(days[i])){
         offerday +=  `<div class="happyday">${dayLetter}</div>`
         }
-
         else { 
             offerday +=  `<div class="happyday weekdays">${dayLetter}</div>`
-
         }
     }
     offerlist.innerHTML+= `

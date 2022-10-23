@@ -220,7 +220,6 @@
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  margin-left: 15px;
   justify-content: center;
 }
 @media (min-with: 1000px) {

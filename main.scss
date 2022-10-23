@@ -241,7 +241,6 @@ $desktop: 1000px;
   display: flex;
   flex-direction: row; 
   flex-flow: row wrap; 
-  margin-left: 15px;
   justify-content: center;
 
   @include desktop {

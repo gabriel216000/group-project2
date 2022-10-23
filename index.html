@@ -23,10 +23,10 @@
     
     <!-- Nav-menubar and hamburger -->
     <nav>
-        <div id="main-logo"><img class="logoimg" src="images/Tipsy_logo_hvitt.png" alt="logo" onclick="showHomePage()"></div>
+        <div id="main-logo"><img class="logoimg" src="images/Tipsy_logo_hvitt.png" alt="Tipsy-logo" aria-label="home" onclick="showHomePage()"></div>
         <!-- Here I have 2 classes with in the same class in a div. Doing so by adding a blank space between them -->
         <div class="navbar-container container">
-            <input type="checkbox" onclick="toggleMenu()">
+            <input aria-label="menu-button" type="checkbox" onclick="toggleMenu()">
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -46,7 +46,7 @@
     <!-- Intro screen -->
     <div class="intro">
         <h1 class="logo-header">
-            <span class="logo"><img src="images/Tipsy_logo_hvitt.png" alt="logo"></span>
+            <span class="logo"><img src="images/Tipsy_logo_hvitt.png" alt="Tipsy logo on splash screen"></span>
         </h1>
     </div>
 
@@ -127,7 +127,7 @@
             </div>
             <form class="form-">
                 <div class="signin-box">
-                    <label for="username">Username</label>
+                    <label for="username1">Username</label>
                     <i class="fas fa-user"></i>
                     <input type="text" name="username1" id="username1" placeholder=""/>
                     <i class="fas fa-exclamation-circle failure-icon"></i>
@@ -135,7 +135,7 @@
                     <div class="error"></div>
                 </div>
                 <div>
-                    <label for="password">Password</label>
+                    <label for="password1">Password</label>
                     <i class="fas fa-lock"></i>
                     <input type="password" name="password1" id="password1" placeholder=""/>
                     <i class="fas fa-exclamation-circle failure-icon"></i>
@@ -163,7 +163,7 @@
             </div>
                 <form class="form2">
                     <div class="signup-box">
-                        <label for="username">Choose a username</label>
+                        <label for="username2">Choose a username</label>
                         <i class="fas fa-user"></i>
                         <input type="text" name="username2" id="username2" placeholder=""/>
                         <i class="fas fa-exclamation-circle failure-icon"></i>
@@ -171,7 +171,7 @@
                         <div class="error"></div>
                     </div>
                     <div>
-                        <label for="password">Choose a password</label>
+                        <label for="password2">Choose a password</label>
                         <i class="fas fa-lock"></i>
                         <input type="password" name="password2" id="password2" placeholder=""/>
                         <i class="fas fa-exclamation-circle failure-icon"></i>

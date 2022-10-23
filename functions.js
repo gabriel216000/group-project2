@@ -70,12 +70,16 @@ const getPlacesHTML = function(places,container){
         const left=c.getBoundingClientRect().left;
         w.style.paddingLeft=left+"px";
   }
+  
   // This makes the cards expand on click
 function expand(card) {
     card.classList.toggle('card-expanded');
 }
 
-// To make the card close when scrolling by (WIP)
-/* window.addEventListener("scroll", (card) => {
-    ;
-}); */
+// Part of code to make the cards close on scroll – not finished
+window.addEventListener("scroll", (e) => {
+    //í staðin fyrir þetta console.log þarftu að loopa í gegnum öll ".one" spjöldin og remove-a card-expanded clasann.
+    //þú getur notað document.querySelectorAll til þess að fá öll spjöldin og svo klassíska for loop til þess að loopa í gegn (því DOMCollection er ekki með forEach method)
+    //þú getur svo gert eitthvað eins og cards[i].classList.remove('card-expanded') til þess að remove-a classan af öllum cördunum (sem mun bara vera eitt en vegna þess að við vitum ekki hvaða spjald það er þurfum við að gera þetta svona)
+    console.log(e.target.scrollingElement.scrollTop)
+  })

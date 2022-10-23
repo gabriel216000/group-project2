@@ -1,0 +1,202 @@
+//This shows at what size the website layout will switch
+$desktop: 1000px;
+
+//Mixin in used to create a css code that is reused
+@mixin desktop {
+  @media (min-with: #{$desktop}) {
+    @content;
+  }
+}
+
+/* The hearts, start */
+.w3-display-container {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.w3-display-container img { /* for responsiveness */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.w3-display-container svg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+}
+/* STYLES FOR CARDS */
+/*Images inside cards*/
+.w3-display-container .images{
+  width: 320px; 
+  height: 200px; 
+  object-fit: cover;
+  margin-bottom: -4px;
+  border-radius: 8px 8px 0px 0px; 
+}
+
+/*Text inside cards - Name of place*/
+.w3-display-container h1 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 6%;
+}
+
+/* P inside of cards - address of place */
+.w3-display-container p {
+  font-size: 16px;
+  letter-spacing: 4%;
+  margin-bottom: 20px;
+}
+
+/*One is what's inside of the cards; Text*/
+.one {
+  width: 370px;
+  color: white;
+  @include desktop {
+    width: 420px;
+
+  }
+}
+
+/*Inside of cards*/
+.w3-display-container {
+  padding: 0px 0px 0px 0px;
+  border-radius: 8px 8px 8px 8px; 
+  background-color: #363636;
+  margin: 10px;
+  height: 390px;
+  overflow: hidden;
+  transition: height 500ms;
+}
+
+.w3-display-container h1, p {
+  margin-left: 12px;
+}
+
+/*card*/
+.home {
+  color: black; 
+  display: flex;
+  flex-direction: row; 
+  flex-flow: row wrap; 
+  margin-left: 15px;
+  justify-content: center;
+
+  @include desktop {
+  color: black; 
+  display: flex;
+  flex-direction: row; 
+  flex-flow: row wrap; 
+  margin-left: 15px;
+  
+
+  }
+}
+
+/*card*/
+#bars-container {   
+  color: black; 
+  display: flex;
+  flex-direction: row; 
+  flex-flow: row wrap; 
+  justify-content: center; 
+}
+
+/*card*/
+#restaurants-container {
+  color: black; 
+  display: flex;
+  flex-direction: row; 
+  flex-flow: row wrap; 
+  justify-content: center;
+}
+
+/*card*/
+#favourites {
+  color: black; 
+  display: flex;
+  flex-direction: row; 
+  flex-flow: row wrap;  
+}
+
+/*  WEEKDAYS  */
+/*Div yfir alla stafina*/
+.week {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px; 
+}
+
+/* Div fyrir hvern og einn staf fyrir sig */
+.happyday {
+  background-color: #BE9CF7;
+  color: rgb(0, 0, 0);
+  margin: 2px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  padding: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  line-height: 23px;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.weekdays {
+  background-color:#927abc;
+}
+
+/*Clock inside cards*/
+.clock {
+  color: #F79DF7;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  margin-left: 0px;
+}
+/* For icons in expanded card */
+.drinks-icon {
+  height: 45px;
+  position: relative !important;
+}
+
+/* Expanded card */
+.card-expanded {
+  height: 100%;
+}
+
+
+.card-expanded .arrow-down {
+  display: none;
+}
+
+/* Styles for drinks list */
+.drinks-list {
+  margin-top: 40px;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-columns: 10% 90%;
+  gap: 0.5rem;
+}
+
+.arrow-up {
+  float: right;
+  margin-right: 20px;
+}
+
+.arrow-down {
+  float: right;
+  margin-top: 20px;
+  margin-left: 30px;
+}

@@ -128,7 +128,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Every weekday",
         drinks: {beer: "Beer <br> 990, 1090, 1290,- kr", wine: "Wine <br> 1090-1190,- kr", shots: "Shots <br> 700-950,- kr"},
-        photo: './images/restaurants/svin.jpg',
+        photo: './images/restaurants/saetasvinid.jpeg',
       },
 
       {
@@ -139,7 +139,7 @@ let places =
         happyhours: "15:00-17:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 990,- kr", wine: "Wine <br> 1190,- kr", coctails: "Cocktails <br> 1690,- kr"},
-        photo: './images/restaurants/fjallkonan.jpg',
+        photo: './images/restaurants/fjallkonan.jpeg',
       },
 
       {
@@ -164,7 +164,6 @@ let places =
         photo: './images/restaurants/kol.jpg',
       },
 
-
       {
         id: 16,
         type: "restaurants",
@@ -173,7 +172,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 600,- kr", wine: "Wine <br> 850,- kr", shots: "Shots <br> 600,- kr"},
-        photo: './images/restaurants/slippbarinn.jpg',
+        photo: './images/restaurants/slippbarinn.jpeg',
       },
 
       {
@@ -206,7 +205,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 800-850,- kr", wine: "Wine <br> 950,- kr"},
-        photo: './images/bars/sky.png',
+        photo: './images/restaurants/skyrest.jpeg',
       },
 
       {
@@ -219,8 +218,6 @@ let places =
         drinks: {beer: "Beer <br> 900,- kr", wine: "Wine <br> 900,- kr"},
         photo: './images/restaurants/eiriksson.jpg',
       },
-
-
 ]
 
 //Array for places with special deals
@@ -249,18 +246,6 @@ let offer =[
       time: "15:00-19:00",
       offer: {coctails: "Gin'n Tonic <br> 1490,- kr"}
   },
-
- /*{
-    id: 4,
-     barId: 0,
-      type: "bar",
-      bar_name: "Bastard Brew and Food",
-      address: "Vegamótastígur 4, 101 Reykajvík",
-      day: ["monday"],
-      time: "12:00-22:00",
-      offer: {beer: "500kr off", beer: "500kr off"}
-      //Vantar mynd
-  },*/
 
   {
       id: 5,

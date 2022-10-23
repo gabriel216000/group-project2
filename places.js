@@ -1,6 +1,5 @@
 let nowlist = document.getElementById("home");
 
-
 // This is for places that are in the home page and shows whats happening now
 
 //The clickable heart

@@ -83,7 +83,8 @@ $desktop: 1000px;
   color: black; 
   display: flex;
   flex-direction: row; 
-  flex-flow: row wrap; 
+  flex-flow: row wrap;
+  row-gap: 30px; 
   margin-left: 15px;
   justify-content: center;
 

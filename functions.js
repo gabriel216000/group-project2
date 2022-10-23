@@ -70,6 +70,7 @@ const getPlacesHTML = function(places,container){
         const left=c.getBoundingClientRect().left;
         w.style.paddingLeft=left+"px";
   }
+  
   // This makes the cards expand on click
 function expand(card) {
     card.classList.toggle('card-expanded');

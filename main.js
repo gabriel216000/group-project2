@@ -97,6 +97,8 @@ function showContactUsPage() {
 }
 function showSignInPage() {
     changePage(signIn);
+    document.getElementById("happytext").innerText ="Sign In"
+    document.getElementById("now").innerText ="Welcome back!"
 }
 function showHomePage() {
     changePage(home);

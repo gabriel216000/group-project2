@@ -86,11 +86,11 @@ body {
 }
 
 /*hamburger og annað*/
-#special-deals, #favourites, #contact-us, #sign-in, #bars, #restaurants{
+#special-deals, #favourites, #bars, #restaurants{
     display: none;
 }
 
-#about, #contact, #bars, #restaurants, #sign-up, #sign-in, .form-contact{
+#about, #contact-us, #sign-in{
     display: none;
 }
 

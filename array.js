@@ -10,7 +10,7 @@ let places =
       happyhours: "12:00-19:00",
       days: "Everyday",
       drinks: {beer: "Beer <br> 850,- kr", wine: "Wine <br> 850,- kr", rose: "Rose <br> 950,- kr", sparklingWine: "Sparkling Wine <br> 950,- kr"},
-      photo: './images/bars/irishman.JPG',
+      photo: './images/bars/irishmanpub.png',
     },
 
     {
@@ -32,7 +32,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 900/1000,- kr", wine: "Wine <br> 1000,- kr", coctails: "Cocktails <br> 1600,- kr", sparklingWine: "Sparkling Wine <br> 1600,- kr"},
-        photo: './images/bars/irishman.JPG', //vantar mytnd fyrir jungle
+        photo: './images/bars/jungle.jpeg',
       },
 
       {
@@ -54,7 +54,7 @@ let places =
         happyhours: "16:00-19:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 850/950,- kr", wine: "Wine <br> 950,- kr", coctails: "Cocktails <br> 1700,- kr", shots: "Shots <br> 900,- kr"},
-        photo: './images/bars/english.jpg',
+        photo: './images/bars/englishpub.jpeg',
       },      
       {
         id: 6,
@@ -74,7 +74,7 @@ let places =
         happyhours: "16:00-19:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 2for1", wine: "Wine <br> 2for1", Shots: "Shots <br> 600", sparklingWine: "Sparkling Wine <br> 1000"},
-        photo: './images/bars/danske.jpg',
+        photo: './images/bars/danski.jpeg',
       },
 
       {
@@ -85,7 +85,7 @@ let places =
         happyhours: "16:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 700", wine: "Wine <br> 700"},
-        photo: './images/bars/islenski.jpg',
+        photo: './images/bars/islenskibarinn.png',
       },
       {
         id: 9,
@@ -105,7 +105,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 25% off", wine: "Wine <br> 25% off", coctails: "Cocktails <br> 25% off"},
-        photo: './images/bars/cocktailbar.JPG',
+        photo: './images/bars/kokteilbarinn.png',
       },
       
       
@@ -117,11 +117,8 @@ let places =
         happyhours: "15:00-19:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 750-890,- kr", wine: "Wine <br> 990,- kr", coctails: "Cocktails <br> 1490,- kr", rose: "Rose <br> 990,- kr", sparklingWine: "Sparkling Wine <br> 990"},
-        photo: './images/bars/miami.jpg',
+        photo: './images/bars/Miami.png',
       },
-
-
-
 
       {
         id: 12,
@@ -209,7 +206,7 @@ let places =
         happyhours: "15:00-18:00",
         days: "Everyday",
         drinks: {beer: "Beer <br> 800-850,- kr", wine: "Wine <br> 950,- kr"},
-        photo: './images/restaurants/sky.jpg',
+        photo: './images/bars/sky.png',
       },
 
       {

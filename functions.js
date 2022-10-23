@@ -7,6 +7,10 @@ const rosesvg = '<svg class="drinks-icon" xmlns="http://www.w3.org/2000/svg" vie
 const cidersvg = '<svg class="drinks-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="white" d="M64 0C55.1 0 46.6 3.7 40.6 10.2s-9.1 15.2-8.5 24.1L60.9 437.7c3 41.9 37.8 74.3 79.8 74.3H307.3c42 0 76.8-32.4 79.8-74.3L415.9 34.3c.6-8.9-2.4-17.6-8.5-24.1S392.9 0 384 0H64zm41 156.5L98.4 64H349.6L343 156.5l-24.2 12.1c-19.4 9.7-42.2 9.7-61.6 0c-20.9-10.4-45.5-10.4-66.4 0c-19.4 9.7-42.2 9.7-61.6 0L105 156.5z"/></svg>';
 const shotssvg = '<svg class="drinks-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="white" d="M32 32c-9.3 0-18.1 4-24.2 11.1S-1 59.4 .3 68.6l50 342.9c5.7 39.3 39.4 68.5 79.2 68.5h253c39.7 0 73.4-29.1 79.2-68.5l50-342.9c1.3-9.2-1.4-18.5-7.5-25.5S489.3 32 480 32H32zM87.7 224L69 96H443L424.3 224H87.7z"/></svg>';
 
+
+
+
+
 //I used html code to get how the info appears on home, bars, resturants and special deals
 //This is a funtion that works over now list, bar list and restaurant list 
 const getPlacesHTML = function(places,container){
@@ -66,8 +70,6 @@ const getPlacesHTML = function(places,container){
         const left=c.getBoundingClientRect().left;
         w.style.paddingLeft=left+"px";
   }
-
-
   // This makes the cards expand on click
 function expand(card) {
     card.classList.toggle('card-expanded');

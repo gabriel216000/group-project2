@@ -31,7 +31,9 @@ if (!visited) {
         }, 2300)
     })
 })
+
  localStorage.setItem('visited', 1);
+ 
 } 
 /* intro end*/
 
@@ -83,7 +85,7 @@ function closeMenu() {
 function showSpecialDealsPage() {
     changePage(specialDeals);
     document.getElementById("happytext").innerText ="SPECIAL DEALS"
-    document.getElementById("now").style.color = "rgba(32, 32, 32, 1)"
+    document.getElementById("now").style.visibility ="hidden"
 }
 function showFavouritesPage() {
     changePage(favourites);
@@ -104,7 +106,6 @@ function showHomePage() {
 function showBars() {
     document.getElementById("happytext").innerText ="BARS"
     document.getElementById("now").style.visibility ="hidden"
-    document.getElementsByClassName("placetypebutton").style.visibility ="hidden"
 }
 function showRestaurants() {
     document.getElementById("happytext").innerText ="RESTAURANTS"
@@ -116,7 +117,6 @@ function changePage(newPage) {
     document.getElementById("happytext").innerText ="HAPPY HOUR"
     document.getElementById("now").style.visibility ="visible"
     document.getElementById("now").innerText ="HAPPENING NOW"
-    document.getElementsByClassName("placetypebutton").style.visibility ="visible"
     document.querySelector('.navbar-container input[type="checkbox"]').checked = false
     if( currentPage !==newPage ) {
         currentPage.style.display = "none";

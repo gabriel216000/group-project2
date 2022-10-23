@@ -31,9 +31,7 @@ if (!visited) {
         }, 2300)
     })
 })
-
  localStorage.setItem('visited', 1);
- 
 } 
 /* intro end*/
 
@@ -93,7 +91,7 @@ function showFavouritesPage() {
 function showContactUsPage() {
     changePage(contactUs);
     document.getElementById("happytext").innerText ="CONTACT US"
-    document.getElementById("now").innerText ="IS THERE ANYTHING WE CAN DO BETTER? \n\ PLEASE LET US KNOW"
+    document.getElementById("now").innerText ="Is there anything we can do better? \n\ Please let us know"
 }
 function showSignInPage() {
     changePage(signIn);
@@ -106,6 +104,7 @@ function showHomePage() {
 function showBars() {
     document.getElementById("happytext").innerText ="BARS"
     document.getElementById("now").style.visibility ="hidden"
+    document.getElementsByClassName("placetypebutton").style.visibility ="hidden"
 }
 function showRestaurants() {
     document.getElementById("happytext").innerText ="RESTAURANTS"
@@ -116,6 +115,8 @@ function showRestaurants() {
 function changePage(newPage) {
     document.getElementById("happytext").innerText ="HAPPY HOUR"
     document.getElementById("now").style.visibility ="visible"
+    document.getElementById("now").innerText ="HAPPENING NOW"
+    document.getElementsByClassName("placetypebutton").style.visibility ="visible"
     document.querySelector('.navbar-container input[type="checkbox"]').checked = false
     if( currentPage !==newPage ) {
         currentPage.style.display = "none";

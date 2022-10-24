@@ -5,7 +5,7 @@ form {
     max-width: 97%;
     border-radius: 25px;
     padding: 55px 30px;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
     padding-right: 60px;
 }
 
@@ -51,10 +51,9 @@ form .half .item {
 
 form label {
     display: block;
-    font-size: 14px;
     letter-spacing: 2px;
     margin-bottom: 7px;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
 }
 
@@ -115,8 +114,10 @@ form .action [type="submit"]{
     margin-top: 40px;
     text-align: center;
     width: 100%;
+    height: 48px;
     margin-top: 0px;
     letter-spacing: 1px;
+    margin-right: -5px;
 }
 
 form .action input[type="submit"]:hover {
@@ -146,7 +147,7 @@ form .half .item input:hover, form .full textarea:hover {
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
-    color: #F69CF6;
+    color: black;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
@@ -184,6 +185,18 @@ form .half .item input:hover, form .full textarea:hover {
     form .half {
         flex-direction: column;
     }
+
+    form label {
+        font-size:20px;
+    }
+
+    form .half .item input {
+        font-size: 20px;
+    }
+
+    form .full textarea {
+        font-size: 20px;
+    }
    
     form .action {
         display: flex;
@@ -197,12 +210,16 @@ form .half .item input:hover, form .full textarea:hover {
 
     form .action input[type="submit"] {
         width: 50%;
+        height: 48px;
         margin-left: auto;
-        margin-right: 0px;
+        margin-right: -30px;
+        font-size: 20px;
+        font-size: 24px;
     }
 
     .text .pppp {
         text-align: right;
+        margin-right: -30px;
 
     }
 }

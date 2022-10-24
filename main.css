@@ -1,43 +1,52 @@
 @charset "UTF-8";
 @media (min-width: 850px) {
-  .navbar-container input[type=checkbox] {
+  .navbar-container input[type="checkbox"] {
     display: none;
   }
+
   .hamburger-lines {
     display: none;
   }
+  
   #menu {
     display: flex;
     justify-content: right;
     z-index: 1005;
     position: relative;
   }
+
   .menu-item1 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
+
   .menu-item2 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
+
   .menu-item3 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
+
   .menu-item4 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
+
   }
+  
 }
-/* Nav - ipad size*/
+
+/* Nav - ipad sizw*/
 @media (max-width: 850px) {
   /*nav-hamborgara línur*/
   .navbar-container input[type=checkbox] {
@@ -137,7 +146,15 @@
     background-color: black;
   }
   .menu-list {
-    animation: mymove 2s forwards;
+            animation: mymove 2s forwards;
+  }
+  @-webkit-keyframes mymove {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
   }
   @keyframes mymove {
     from {

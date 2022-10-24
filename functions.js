@@ -65,10 +65,10 @@ const getPlacesHTML = function(places,container){
 
         // This is so the buttons (placetypebutton) align with the cards (one)
         // The buttons align when you open the website and move with it when it changes sizes but is more accurate on refresh
-        const c=document.querySelector(".one");
-        const w=document.querySelector(".placetypebutton");
-        const left=c.getBoundingClientRect().left;
-        w.style.paddingLeft=left+"px";
+        //const c=document.querySelector(".one");
+        //const w=document.querySelector(".placetypebutton");
+        //const left=c.getBoundingClientRect().left;
+        //w.style.paddingLeft=left+"px";
   }
   
   // This makes the cards expand on click
@@ -81,5 +81,5 @@ window.addEventListener("scroll", (e) => {
     //í staðin fyrir þetta console.log þarftu að loopa í gegnum öll ".one" spjöldin og remove-a card-expanded clasann.
     //þú getur notað document.querySelectorAll til þess að fá öll spjöldin og svo klassíska for loop til þess að loopa í gegn (því DOMCollection er ekki með forEach method)
     //þú getur svo gert eitthvað eins og cards[i].classList.remove('card-expanded') til þess að remove-a classan af öllum cördunum (sem mun bara vera eitt en vegna þess að við vitum ekki hvaða spjald það er þurfum við að gera þetta svona)
-    console.log(e.target.scrollingElement.scrollTop)
+    //console.log(e.target.scrollingElement.scrollTop)
   })

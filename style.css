@@ -108,29 +108,10 @@
     padding-top: 100px;
 }
 
-/*#info {
-    background-color: white;
-    padding: 10px 10px 10px 10px;
-    border-radius: 0px 0px 8px 8px; 
-}*/
-
-/*#info h1, p{
-    margin-bottom: 5px;
-}*/
-
 #left, #middle, #right, #last {
     padding-left: 20px;
     width: 320px;
 }
-/*
-#home {
-    color: black; 
-    display: flex;
-    flex-direction: row; 
-    flex-flow: row wrap;
-    row-gap: 30px; 
-}*/
-
 
 /* Buttons on homepage */
 .placetypebutton {
@@ -150,7 +131,7 @@
     text-align: center;
     line-height: 33px;
     vertical-align: middle;
-    margin-left: 27px; 
+    margin-left: 180px; 
     text-decoration: none;
 }
 

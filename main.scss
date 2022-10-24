@@ -1,8 +1,7 @@
-@media only screen and (min-width: 850px) {
+@media (min-width: 850px) {
   .navbar-container input[type="checkbox"] {
     display: none;    
   }
-
 
   .hamburger-lines {
     display: none;
@@ -13,45 +12,39 @@
     justify-content: right;
     z-index: 1005;
     position: relative;
-    color: white;
-    font-size: 36px;
-    height: 50px;
-    text-decoration: none;
-    margin: 10px;
   }
 
   .menu-item1 {
     color: white;
-    margin: 25px;
+    margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
 
   .menu-item2 {
     color: white;
-    margin: 25px;
+    margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
 
   .menu-item3 {
     color: white;
-    margin: 25px;
+    margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
 
   .menu-item4 {
     color: white;
-    margin: 25px;
+    margin: 30px;
     text-decoration: none;
     font-size: 24px;
-
   }
 }
 
 
-/* Nav - ipad sizw*/
+/* Nav - ipad size*/
 @media (max-width: 850px) {
 
   /*nav-hamborgara línur*/
@@ -60,7 +53,7 @@
     z-index: 1000;
   }
 
-  /menu {
+  #menu {
     position: fixed;
     top: 10vh;
     left: 100%;

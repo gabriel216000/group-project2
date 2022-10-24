@@ -227,7 +227,7 @@ let offer =[
       id: 1,
       barId: 7,
       day: ["thursday"],
-      time: "allday",
+      time: "All day",
       offer: {coctails: "Cocktails <br> 1600,- kr"}
   },
 

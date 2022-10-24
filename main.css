@@ -12,39 +12,32 @@
     z-index: 1005;
     position: relative;
   }
-
   .menu-item1 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
-
   .menu-item2 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
-
   .menu-item3 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
   }
-
   .menu-item4 {
     color: white;
     margin: 30px;
     text-decoration: none;
     font-size: 24px;
-
   }
-  
 }
-
-/* Nav - ipad sizw*/
+/* Nav - ipad size*/
 @media (max-width: 850px) {
   /*nav-hamborgara línur*/
   .navbar-container input[type=checkbox] {
@@ -121,7 +114,7 @@
   }
   /* nav-hamburger lines styled*/
   .navbar-container .hamburger-lines .line {
-    /*display: block;*/
+    display: block;
     height: 4px;
     width: 100%;
     border-radius: 10px;
@@ -130,8 +123,8 @@
   #menu.is-active {
     left: 0;
   }
-  .menu-item1, .menu-item2, .menu-item3, .menu-item4 {
-    display: block;
+  #menu .menu-item1, .menu-item2, .menu-item3, .menu-item4 {
+    /*display: block;*/
     width: 100%;
     max-width: 500px;
     margin: 0 auto 16px;
@@ -143,21 +136,11 @@
     border: none;
     font-size: large;
   }
-  
-  .menu-item1:hover, .menu-item2:hover, .menu-item3:hover, .menu-item4:hover {
+  #menu .menu-item1:hover, .menu-item2:hover, .menu-item3:hover, .menu-item4:hover {
     background-color: black;
   }
   .menu-list {
-    -webkit-animation: mymove 2s forwards;
-            animation: mymove 2s forwards;
-  }
-  @-webkit-keyframes mymove {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 0%;
-    }
+    animation: mymove 2s forwards;
   }
   @keyframes mymove {
     from {

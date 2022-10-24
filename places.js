@@ -1,6 +1,5 @@
 let nowlist = document.getElementById("home");
 
-
 // This is for places that are in the home page and shows whats happening now
 
 //The clickable heart
@@ -20,7 +19,7 @@ const like=(svgdiv)=>{
 
 
 //I call to this function in functions.js
-getPlacesHTML(places, nowlist)
+getPlacesHTML(nextHh, nowlist)
 
 //Here I put a filter for the bar, now this page only shows the bars
 // I end this code by calling on the function 

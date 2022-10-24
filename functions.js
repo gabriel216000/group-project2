@@ -18,7 +18,7 @@ const getPlacesHTML = function(places,container){
         container.innerHTML+= `
             <div class="one">
                 <div class="w3-display-container" onclick="expand(this)">
-                    <img class="images" id="cocktailbar" src="${element.photo}" alt="Happy hour right now">
+                    <img class="images" id="cocktailbar" src="${element.photo}" alt="Photo of ${element.bar_name}">
                     <div class="w3-display-topright w3-container" onclick="like(this)">
                         <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="white" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/></svg>
                     </div>
@@ -45,19 +45,19 @@ const getPlacesHTML = function(places,container){
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div> 
-                <div class"card-expand" id="expand"> 
-                    <p class="drinks-list">
-                        ${element.drinks.beer?beersvg+element.drinks.beer:""} <br>
-                        ${element.drinks.wine?winesvg+element.drinks.wine:""}
-                        ${element.drinks.coctails?cocktailsvg+element.drinks.coctails:""}
-                        ${element.drinks.sparklingWine?sparklingwinesvg+element.drinks.sparklingWine:""}
-                        ${element.drinks.rose?rosesvg+element.drinks.rose:""}
-                        ${element.drinks.shots?shotssvg+element.drinks.shots:""}
-                    </p>
-                <div class="fa arrow-up">
-                    <i class="fa-solid fa-chevron-up"></i>
-                </div>
-                </div>
+                    <div class"card-expand" id="expand"> 
+                        <p class="drinks-list">
+                            ${element.drinks.beer?beersvg+element.drinks.beer:""} <br>
+                            ${element.drinks.wine?winesvg+element.drinks.wine:""}
+                            ${element.drinks.coctails?cocktailsvg+element.drinks.coctails:""}
+                            ${element.drinks.sparklingWine?sparklingwinesvg+element.drinks.sparklingWine:""}
+                            ${element.drinks.rose?rosesvg+element.drinks.rose:""}
+                            ${element.drinks.shots?shotssvg+element.drinks.shots:""}
+                        </p>
+                    <div class="fa arrow-up">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    </div>
                 </div>
             </div>
         `   
@@ -65,17 +65,21 @@ const getPlacesHTML = function(places,container){
 
         // This is so the buttons (placetypebutton) align with the cards (one)
         // The buttons align when you open the website and move with it when it changes sizes but is more accurate on refresh
-        const c=document.querySelector(".one");
-        const w=document.querySelector(".placetypebutton");
-        const left=c.getBoundingClientRect().left;
-        w.style.paddingLeft=left+"px";
+        //const c=document.querySelector(".one");
+        //const w=document.querySelector(".placetypebutton");
+        //const left=c.getBoundingClientRect().left;
+        //w.style.paddingLeft=left+"px";
   }
+  
   // This makes the cards expand on click
 function expand(card) {
     card.classList.toggle('card-expanded');
 }
 
-// To make the card close when scrolling by (WIP)
-/* window.addEventListener("scroll", (card) => {
-    ;
-}); */
+// Part of code to make the cards close on scroll – not finished
+window.addEventListener("scroll", (e) => {
+    //í staðin fyrir þetta console.log þarftu að loopa í gegnum öll ".one" spjöldin og remove-a card-expanded clasann.
+    //þú getur notað document.querySelectorAll til þess að fá öll spjöldin og svo klassíska for loop til þess að loopa í gegn (því DOMCollection er ekki með forEach method)
+    //þú getur svo gert eitthvað eins og cards[i].classList.remove('card-expanded') til þess að remove-a classan af öllum cördunum (sem mun bara vera eitt en vegna þess að við vitum ekki hvaða spjald það er þurfum við að gera þetta svona)
+    //console.log(e.target.scrollingElement.scrollTop)
+  })

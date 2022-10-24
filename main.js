@@ -104,10 +104,12 @@ function showHomePage() {
     changePage(home);
 }
 function showBars() {
+    changePage(bars);
     document.getElementById("happytext").innerText ="BARS"
     document.getElementById("now").style.visibility ="hidden"
 }
 function showRestaurants() {
+    changePage(restaurants);
     document.getElementById("happytext").innerText ="RESTAURANTS"
     document.getElementById("now").style.visibility ="hidden"
 }

@@ -3,14 +3,14 @@
     padding: 0px;
   }
   
-  body {
+body {
     font-family: 'poppins', sans-serif;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     background-color: rgba(32, 32, 32, 1);
     color: white;
-  }
+}
 
 /* Splash screen */
 .intro {

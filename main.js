@@ -139,15 +139,17 @@ function changePage(newPage) {
 
 
 /*refreshar síðu og þú ert ennþá inná sömu síðu en kastar þér ekki á homepage*/ 
+/*
 handleRefresh()
 
 function handleRefresh() {
     const prevPageID = sessionStorage.getItem("pageID");
     if( prevPageID ) {
-        [home, contactUs, specialDeals, favourites, signIn, bars, restaurants].forEach(section =>{
+        [].forEach(section =>{
             if( section.id === prevPageID )
                 changePage(section);
         });
     }
 }
+*/
 

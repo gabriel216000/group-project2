@@ -14,6 +14,8 @@ const shotssvg = '<svg class="drinks-icon" xmlns="http://www.w3.org/2000/svg" vi
 //I used html code to get how the info appears on home, bars, resturants and special deals
 //This is a funtion that works over now list, bar list and restaurant list 
 const getPlacesHTML = function(places,container){
+    console.log(container)
+    console.log(places)
     places.forEach(element => {
         container.innerHTML+= `
             <div class="one">
@@ -65,7 +67,7 @@ const getPlacesHTML = function(places,container){
 
         // This is so the buttons (placetypebutton) align with the cards (one)
         // The buttons align when you open the website and move with it when it changes sizes but is more accurate on refresh
-    alignButtons()      
+    alignButtons();      
   }
   function alignButtons() {
     const c=document.querySelector(".one");

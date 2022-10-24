@@ -137,7 +137,16 @@
     background-color: black;
   }
   .menu-list {
-    animation: mymove 2s forwards;
+    -webkit-animation: mymove 2s forwards;
+            animation: mymove 2s forwards;
+  }
+  @-webkit-keyframes mymove {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
   }
   @keyframes mymove {
     from {

@@ -11,12 +11,13 @@ const nextHh = places.filter((bar=>{
 
 // Get the NOW time 
     const hour = d.getHours();
+    
     const from = Number(bar.happyhours.substring(0,2)); // From **:** aclock 
     const to = Number(bar.happyhours.substring(6,8)); // To **:** aclock
-    if( hour < 12 ) { // The first happyhour starts at 12:00 so if the time is less than 12 we get what's similar 
+    if( hour <= 12 ) { // The first happyhour starts at 12:00 so if the time is less than 12 we get what's similar 
         return(from==12) 
     }
-    return( hour < to && hour > from ) // If time is more than to(start) and less than form (end time) the places that fall under that appear
+    return( hour <= to && hour > from ) // If time is more than to(start) and less than form (end time) the places that fall under that appear
 }))
 
 // Days in numbers to catagorize 

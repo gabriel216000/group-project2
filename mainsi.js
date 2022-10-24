@@ -1,4 +1,4 @@
-let id = (id) => document.getElementById(id);
+let id = (id) => document.querySelector("."+id);
 
 let classes = (classes) => document.getElementsByClassName(classes);
 

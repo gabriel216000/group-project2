@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media (min-width: 744px) {
+@media (min-width: 850px) {
   .navbar-container input[type=checkbox] {
     display: none;
   }
@@ -12,9 +12,40 @@
     z-index: 1005;
     position: relative;
   }
+
+  .menu-item1 {
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .menu-item2 {
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .menu-item3 {
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .menu-item4 {
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 24px;
+
+  }
+  
 }
-/* Nav - Desktop sizw*/
-@media (max-width: 744px) {
+
+/* Nav - ipad sizw*/
+@media (max-width: 850px) {
   /*nav-hamborgara línur*/
   .navbar-container input[type=checkbox] {
     display: none;
@@ -90,7 +121,7 @@
   }
   /* nav-hamburger lines styled*/
   .navbar-container .hamburger-lines .line {
-    display: block;
+    /*display: block;*/
     height: 4px;
     width: 100%;
     border-radius: 10px;
@@ -99,7 +130,7 @@
   #menu.is-active {
     left: 0;
   }
-  #menu .menu-item {
+  .menu-item1, .menu-item2, .menu-item3, .menu-item4 {
     display: block;
     width: 100%;
     max-width: 500px;
@@ -112,7 +143,8 @@
     border: none;
     font-size: large;
   }
-  #menu .menu-item:hover {
+  
+  .menu-item1:hover, .menu-item2:hover, .menu-item3:hover, .menu-item4:hover {
     background-color: black;
   }
   .menu-list {

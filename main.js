@@ -13,17 +13,17 @@ if (!visited) {
     intro.style.display = "block";
     window.addEventListener("DOMContentLoaded", ()=>{
     setTimeout(()=>{
-        logoSpan.forEach((span, idx)=>{
+        logoSpan.forEach((span)=>{
             setTimeout(()=>{
                 span.classList.add("active");
-            }, (idx + 1) * 400)
+            })
         });
         setTimeout(()=>{
-            logoSpan.forEach((span, idx)=>{
+            logoSpan.forEach((span)=>{
               setTimeout(()=>{
                 span.classList.remove("active");
                 span.classList.add("fade");
-              }, (idx + 1) * 50)  
+              })  
             })
         }, 2000);
         setTimeout(()=>{
@@ -144,7 +144,7 @@ handleRefresh()
 function handleRefresh() {
     const prevPageID = sessionStorage.getItem("pageID");
     if( prevPageID ) {
-        [].forEach(section =>{
+        [home, contactUs, specialDeals, favourites, signIn, bars, restaurants].forEach(section =>{
             if( section.id === prevPageID )
                 changePage(section);
         });

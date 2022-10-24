@@ -65,12 +65,14 @@ const getPlacesHTML = function(places,container){
 
         // This is so the buttons (placetypebutton) align with the cards (one)
         // The buttons align when you open the website and move with it when it changes sizes but is more accurate on refresh
-        //const c=document.querySelector(".one");
-        //const w=document.querySelector(".placetypebutton");
-        //const left=c.getBoundingClientRect().left;
-        //w.style.paddingLeft=left+"px";
+    alignButtons()      
   }
-  
+  function alignButtons() {
+    const c=document.querySelector(".one");
+    const w=document.querySelector(".placetypebutton");
+    const left=c.getBoundingClientRect().left;
+    w.style.paddingLeft=left+"px";  
+  }
   // This makes the cards expand on click
 function expand(card) {
     card.classList.toggle('card-expanded');

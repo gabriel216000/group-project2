@@ -132,7 +132,11 @@ function changePage(newPage) {
     }
     closeMenu();
     sessionStorage.setItem("pageID", currentPage.id)
+    alignButtons();
 }
+
+
+
 
 /*refreshar síðu og þú ert ennþá inná sömu síðu en kastar þér ekki á homepage*/ 
 handleRefresh()

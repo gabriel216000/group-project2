@@ -24,8 +24,7 @@
 .w3-display-container .images {
   width: 320px;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: -4px;
   border-radius: 8px 8px 0px 0px;
 }
